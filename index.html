@@ -478,24 +478,67 @@
   </ul>
 </div>
 
-<h3>5.2 持續性成本（Pandora Japan 本地承擔，不含開模費）</h3>
-<p>以下是日本 local entity 正式上線後每年需支付的營運成本（不重複計算開模費），單位：<strong>NT$</strong>（匯率 1 TWD ≒ 4.7 JPY），雲端採 GCP asia-northeast1 / 東京 Region 符合 APPI。</p>
+<h3>5.2 Y1 精實營運預算：驗證市場期</h3>
+<div class="callout">
+  <div class="title">Y1 的核心任務不是規模化、是驗證</div>
+  <ul class="clean" style="margin-bottom:0;">
+    <li><strong>目標客戶數</strong>：10 家月租小客戶 <strong>或</strong> 2 家年約客戶（ARR 約 NT$2.4M）</li>
+    <li><strong>找夥伴</strong>：找到 1–2 位了解日本市場需求、願意 commit 年約的 <strong>在地 BD / 行銷夥伴</strong></li>
+    <li><strong>驗證 Insight</strong>：Pandora 產出的日文輿情洞察，需要 <strong>當地行銷人實際驗證</strong>商業可用性</li>
+    <li><strong>彈性成本</strong>：X API 在 Phase 2 自寫爬蟲成功後可大幅削減，Y1 先用 6 個月觀察期</li>
+  </ul>
+</div>
 
 <table>
-  <thead><tr><th>項目</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th>說明</th></tr></thead>
+  <thead><tr><th>項目</th><th class="num">Y1 精實</th><th>說明（低 / 高情境）</th></tr></thead>
   <tbody>
-    <tr><td>X API Pro 年費</td><td class="num">NT$2.5M</td><td class="num">NT$3.0M</td><td class="num">NT$4.0M</td><td>$5k USD/月 × 12（唯一大額外購）</td></tr>
-    <tr><td>代理 IP / 反爬工具 / 法務</td><td class="num">NT$0.5M</td><td class="num">NT$0.7M</td><td class="num">NT$1.0M</td><td>TOS / APPI 合規審查</td></tr>
-    <tr><td>後端 / 資料工程師 × 3 → 5 FTE</td><td class="num">NT$6.9M</td><td class="num">NT$10.0M</td><td class="num">NT$13.0M</td><td>平台 / 管線 / 爬蟲維運</td></tr>
-    <tr style="background:rgba(107,164,255,0.04);"><td><strong>AI / LLM Token 成本</strong></td><td class="num">NT$1.2M</td><td class="num">NT$3.8M</td><td class="num">NT$5.5M</td><td>自 Claude/GPT 採購，售予客戶時加價</td></tr>
-    <tr style="background:rgba(77,212,172,0.04);"><td><strong>GCP Datalake（東京 Region）</strong></td><td class="num">NT$0.8M</td><td class="num">NT$1.8M</td><td class="num">NT$3.0M</td><td>BigQuery / Cloud Storage / Pub/Sub / GKE</td></tr>
-    <tr><td>銷售 / CS / 在地 PM</td><td class="num">NT$5.1M</td><td class="num">NT$7.7M</td><td class="num">NT$12.8M</td><td>Y1 3 人 → Y3 6 人</td></tr>
-    <tr><td>行銷 + 合規 + 辦公</td><td class="num">NT$3.2M</td><td class="num">NT$4.7M</td><td class="num">NT$7.5M</td><td>ISMS / APPI / 合同会社</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>Pandora Japan 年度 OPEX</strong></td><td class="num"><strong>NT$20.2M</strong></td><td class="num"><strong>NT$31.7M</strong></td><td class="num"><strong>NT$46.8M</strong></td><td>對應日幣 ¥95M / ¥149M / ¥220M</td></tr>
+    <tr><td>X API Pro（彈性）</td><td class="num">NT$0.6M – NT$1.25M</td><td>Phase 2 自寫爬蟲成功後可歸零；保守先訂 3–6 個月觀察</td></tr>
+    <tr><td>代理 IP / 反爬 / 法務</td><td class="num">NT$0.3M</td><td>最低限度 TOS / APPI 合規審查</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>後端 / 資料工程師</strong></td><td class="num"><strong>NT$0M</strong></td><td><strong>由騰雲開模費 NT$1.2M 完整 cover（Phase 1/2/3）</strong>，Y1 不重複計算</td></tr>
+    <tr style="background:rgba(107,164,255,0.04);"><td>AI / LLM Token 成本</td><td class="num">NT$0.3M</td><td>10 家客戶規模、低用量；毛利率 ~60%</td></tr>
+    <tr style="background:rgba(77,212,172,0.04);"><td>GCP Datalake（東京）</td><td class="num">NT$0.3M</td><td>10 家客戶規模、BigQuery 使用量極低</td></tr>
+    <tr style="background:rgba(255,184,77,0.08);"><td><strong>在地 BD / 行銷夥伴 × 1</strong></td><td class="num"><strong>NT$1.5M</strong></td><td>驗證市場核心角色；含基本薪 + 業績獎金</td></tr>
+    <tr><td>合同会社設立 + 基本行銷</td><td class="num">NT$0.5M</td><td>法人登記 + 參展 / 公關 / SEO 最低配置</td></tr>
+    <tr style="background:rgba(255,107,107,0.08);"><td><strong>Y1 精實 OPEX 合計</strong></td><td class="num"><strong>NT$3.5M – NT$4.2M</strong></td><td>對應日幣約 ¥16–20M（原估 ¥95M，砍 ~80%）</td></tr>
   </tbody>
 </table>
 
-<h3>5.3 Token 與 Datalake 的成本結構</h3>
+<h3>5.3 Y1 收入 vs 成本：驗證 ≠ 獲利，但要看得到路徑</h3>
+<table>
+  <thead><tr><th>Y1 客戶組合</th><th class="num">Y1 收入（TWD）</th><th class="num">vs Y1 OPEX NT$4M</th><th>戰略意義</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>路徑 A</strong>：10 家 SME 月付（平均 NT$15k × 9 月）</td>
+      <td class="num">NT$1.35M</td>
+      <td><span class="pill danger">缺口 NT$2.7M</span></td>
+      <td>驗證「量」— 證明需求存在</td>
+    </tr>
+    <tr>
+      <td><strong>路徑 B</strong>：2 家年約客戶（NT$10 萬 × 12 月 × 2）</td>
+      <td class="num">NT$2.4M</td>
+      <td><span class="pill p2">缺口 NT$1.6M</span></td>
+      <td>驗證「質」— 證明客戶願 commit</td>
+    </tr>
+    <tr style="background:rgba(77,212,172,0.08);">
+      <td><strong>理想</strong>：A + B 混合（2 年約 + 5 月付 SME）</td>
+      <td class="num">NT$3.0M</td>
+      <td><span class="pill p2">缺口 NT$1M 內</span></td>
+      <td>量 + 質同時驗證，Y2 有足夠案例可放大</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">※ Y1 可接受的虧損上限：NT$1–2M（約 ¥5–10M）。此為「市場驗證學費」，而非商業失敗。</p>
+
+<div class="callout warn">
+  <div class="title">Y1 → Y2 → Y3 階段論</div>
+  <ul class="clean" style="margin-bottom:0;">
+    <li><span class="pill p1">Y1 驗證</span>　目標：<strong>2 家年約 / 10 家月付</strong>；OPEX NT$4M 內；找到在地夥伴；insight 經當地行銷人驗證。<strong>不追求獲利、追求 commit</strong>。</li>
+    <li><span class="pill p2">Y2 放大</span>　Y1 站穩後才加碼：擴編 BD 1→3、加 CS 1 人、上 YouTube/TikTok 渠道、正式簽 X API Pro 或全面轉自寫爬蟲；目標 ARR 進入 NT$20–30M 區間、損益平衡。</li>
+    <li><span class="pill p3">Y3 ROI</span>　把 Y2 建立的客戶資產複利放大，進入獲利年；此階段才適合討論估值倍數。</li>
+  </ul>
+</div>
+
+<h3>5.4 Token 與 Datalake 的成本結構（長期 COGS 參考）</h3>
 <table>
   <thead><tr><th>成本項</th><th>採購成本</th><th>計入 Pandora 客戶方案的方式</th></tr></thead>
   <tbody>
