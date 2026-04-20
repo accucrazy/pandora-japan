@@ -168,9 +168,9 @@
 <table>
   <thead><tr><th>層級</th><th class="num">企業數</th><th class="num">工具採用率</th><th class="num">付費客戶</th><th>主要方案</th></tr></thead>
   <tbody>
-    <tr><td>大企業（&gt;1,000 人）</td><td class="num">4,500</td><td class="num">70%</td><td class="num">3,150</td><td><span class="pill p3">Plan 3</span></td></tr>
-    <tr><td>中堅（300–1,000 人）</td><td class="num">13,000</td><td class="num">35%</td><td class="num">4,550</td><td><span class="pill p2">Plan 2</span></td></tr>
-    <tr><td>中小品牌（50–300 人）</td><td class="num">55,000</td><td class="num">8%</td><td class="num">4,400</td><td><span class="pill p1">P1</span> / <span class="pill p2">P2</span></td></tr>
+    <tr><td>大企業（&gt;1,000 人）</td><td class="num">4,500</td><td class="num">70%</td><td class="num">3,150</td><td><span class="pill p3">進階</span></td></tr>
+    <tr><td>中堅（300–1,000 人）</td><td class="num">13,000</td><td class="num">35%</td><td class="num">4,550</td><td><span class="pill p2">標準</span></td></tr>
+    <tr><td>中小品牌（50–300 人）</td><td class="num">55,000</td><td class="num">8%</td><td class="num">4,400</td><td><span class="pill p1">入門</span> / <span class="pill p2">標準</span></td></tr>
     <tr><td>廣告 / 公關代理商</td><td class="num">5,200</td><td class="num">55%</td><td class="num">2,860</td><td>通路 + 自用</td></tr>
     <tr style="background:rgba(255,107,107,0.06);"><td><strong>合計潛在客戶</strong></td><td class="num">—</td><td class="num">—</td><td class="num"><strong>約 14,960 家</strong></td><td>SAM 客戶池</td></tr>
   </tbody>
@@ -202,21 +202,21 @@
       <td>NTT Communications（日本）</td>
       <td>本地入門王、價格透明</td>
       <td>月 88k / 176k / 220k 円</td>
-      <td style="color:var(--accent-2);"><span class="pill p1">P1</span> 同價 88k 円月約進場，差異化：AI 月報 + 情緒細分 + 主題萃取自動化（Buzz Finder 目前要人工）。</td>
+      <td style="color:var(--accent-2);"><span class="pill p1">入門</span> 同價 88k 円月約進場，差異化：AI 月報 + 情緒細分 + 主題萃取自動化（Buzz Finder 目前要人工）。</td>
     </tr>
     <tr>
       <td><strong>Social Insight</strong></td>
       <td>User Local（日本）</td>
       <td>運營型、統包無上限</td>
       <td>月 15–40 萬円（非公開）</td>
-      <td style="color:var(--accent-2);">區隔：不做發文 / CRM；用 <span class="pill p2">P2</span> 補 VOC + 競品深度，可並存（透過 API 餵分析）。</td>
+      <td style="color:var(--accent-2);">區隔：不做發文 / CRM；用 <span class="pill p2">標準</span> 補 VOC + 競品深度，可並存（透過 API 餵分析）。</td>
     </tr>
     <tr>
       <td><strong>Quid Monitor</strong></td>
       <td>TDSE / Quid Japan</td>
       <td>深分析、完全客製</td>
       <td>月 50–150 萬円</td>
-      <td style="color:var(--accent-2);"><span class="pill p3">P3</span> 公開起價 60 萬円打「黑箱見積」，UI 友善 + AI 內含（Quid Generative 要加購）。</td>
+      <td style="color:var(--accent-2);"><span class="pill p3">進階</span> 公開起價 60 萬円打「黑箱見積」，UI 友善 + AI 內含（Quid Generative 要加購）。</td>
     </tr>
     <tr>
       <td><strong>Meltwater</strong></td>
@@ -249,7 +249,7 @@
   <div class="card">
     <div class="card-title">vs Buzz Finder（本地入門王）</div>
     <ul class="clean" style="font-size:13px;margin-bottom:0;">
-      <li>P1 同價 88k 円月約進場</li>
+      <li>入門方案 88k 円月約進場</li>
       <li>差異：AI 月報 / 情緒細分 / 主題萃取自動化</li>
       <li>通路：與公關公司合作做替換</li>
       <li>話術：「同價格、自動做完月報」</li>
@@ -259,7 +259,7 @@
     <div class="card-title">vs Social Insight（運營型）</div>
     <ul class="clean" style="font-size:13px;margin-bottom:0;">
       <li>明確區隔：不做發文、只做洞察</li>
-      <li>P2 補 VOC / 競品深度</li>
+      <li>標準方案補 VOC / 競品深度</li>
       <li>可共存：透過 API 餵分析資料回 Social Insight</li>
       <li>話術：「運營留 SI、分析換 Pandora」</li>
     </ul>
@@ -267,7 +267,7 @@
   <div class="card p3">
     <div class="card-title">vs Quid Monitor（深分析）</div>
     <ul class="clean" style="font-size:13px;margin-bottom:0;">
-      <li>P3 起價 60 萬円 vs Quid 100 萬円</li>
+      <li>進階方案 60 萬円起 vs Quid 100 萬円</li>
       <li>UI 友善、AI 原生內含不加購</li>
       <li>攻點：中型品牌 Quid 用不完的場景</li>
       <li>話術：「深度 80%、價格 50%」</li>
@@ -293,62 +293,138 @@
 </div>
 
 <!-- ==================== 4 Pandora 方案規格 ==================== -->
-<h2 id="product"><span class="num">04</span>Pandora 方案規格</h2>
-<p>定價公式採「<strong>基礎平台費 + 關鍵字詞組 × 單價 + 帳號 × 單價 + 選配模組</strong>」四件式結構。除此之外，Pandora 與純 Dashboard 型競品的兩個核心差異是 <strong>Token 額度制 AI</strong> 與 <strong>Datalake 原生資料資產</strong>。</p>
+<h2 id="product"><span class="num">04</span>Pandora 日本方案規格</h2>
+<p>方案分 <strong>入門 / 標準 / 進階</strong> 三階，<strong>差異只在兩軸</strong>：① <strong>運算資源（爬蟲速度）</strong>、② <strong>Datalake 容量（Token 額度）</strong>。三個方案 <strong>登入帳號統一 5 組</strong>，超過 <strong>NT$25,000 / 月 / 帳號</strong>（約 ¥117,500 / 月）。</p>
 
 <h3>4.1 產品兩大差異化：Token + Datalake</h3>
 <div class="grid grid-2">
   <div class="card p2">
-    <div class="card-title">① Token 額度制 AI（每 Plan 自帶月 Token 額度）</div>
+    <div class="card-title">① Token（LLM 算力單位）</div>
     <ul class="clean" style="font-size:13px;margin-bottom:0;">
-      <li>摘要、VOC 萃取、競品比較、AI 問答、月報生成 全部消耗 <strong>LLM Token</strong></li>
-      <li>每 Plan 內含 <strong>月 Token 額度</strong>，超額按量計價（明碼）</li>
-      <li>Plan 1：50 萬 tokens / 月；Plan 2：300 萬；Plan 3：1,500 萬</li>
-      <li>超額定價：<span class="tag-chip">輸入 ¥0.5 / 千 tokens</span><span class="tag-chip">輸出 ¥1.5 / 千 tokens</span></li>
-      <li>客戶好處：用多少付多少、不被「無限流量」補貼其他客戶</li>
+      <li>摘要、VOC 萃取、競品比較、AI 問答、<strong>輿情監測報告</strong>生成，全部消耗 <strong>LLM Token</strong></li>
+      <li>Token 是客戶可感知的「分析預算」單位，用多少 = 產出多少報告</li>
+      <li>每方案內含 Datalake 月 Token 額度，超額按量計價（輸入 ¥0.5 / 輸出 ¥1.5 每千 tokens）</li>
+      <li>客戶好處：預算可控、按量擴充</li>
     </ul>
   </div>
   <div class="card">
-    <div class="card-title">② Datalake 原生資料資產（不只是 Dashboard）</div>
+    <div class="card-title">② Datalake（原生資料資產）</div>
     <ul class="clean" style="font-size:13px;margin-bottom:0;">
       <li>所有 X / Threads / IG / 5ch / Review / News 資料進 <strong>GCP BigQuery Datalake</strong>（東京 Region，APPI 合規）</li>
-      <li>客戶可做 <strong>ad-hoc query、歷史回溯、跨渠道關聯</strong>（非 pre-aggregated dashboard）</li>
-      <li>P2/P3 可透過 <strong>BI / API 直連</strong>資料湖，自家 BI / CDP / LLM pipeline 二次分析</li>
-      <li>客戶的資料 <strong>永久保留</strong>（合約期內）可 re-run 不同詞組組合</li>
+      <li>兩個容量等級：<strong>Data Lake 50M tokens</strong> / <strong>Data Ocean 150M tokens</strong></li>
+      <li>客戶可 <strong>ad-hoc query、歷史回溯、跨渠道關聯</strong>（非 pre-aggregated dashboard）</li>
+      <li>進階方案可 <strong>BI / API 直連</strong>資料湖，自家 BI / CDP / LLM 二次分析</li>
       <li>競品比較：Buzz Finder / Social Insight 只給 UI；Meltwater 資料需額外購買 export 權</li>
     </ul>
   </div>
 </div>
 
-<h3>4.2 三階方案規格表</h3>
+<h3>4.2 三個方案規格對照</h3>
 <table>
   <thead>
-    <tr><th>項目</th><th><span class="pill p1">Plan 1 Monitor</span></th><th><span class="pill p2">Plan 2 Insight</span></th><th><span class="pill p3">Plan 3 Enterprise</span></th></tr>
+    <tr><th>項目</th><th><span class="pill p1">入門 Entry</span></th><th><span class="pill p2">標準 Standard</span></th><th><span class="pill p3">進階 Advanced</span></th></tr>
   </thead>
   <tbody>
-    <tr><td>基礎平台費 / 月</td><td class="num">50,000 円</td><td class="num">100,000 円</td><td class="num">300,000 円〜</td></tr>
-    <tr><td>含詞組數</td><td class="num">3 組</td><td class="num">10 組</td><td class="num">30 組〜</td></tr>
-    <tr><td>追加詞組 / 月</td><td class="num">10,000 円</td><td class="num">8,000 円</td><td class="num">5,000 円</td></tr>
-    <tr><td>含帳號數</td><td class="num">2 名</td><td class="num">5 名</td><td class="num">內含 15（無上限）</td></tr>
-    <tr><td>追加帳號 / 月</td><td class="num">4,000 円</td><td class="num">3,500 円</td><td class="num">2,500 円</td></tr>
-    <tr style="background:rgba(77,212,172,0.04);"><td><strong>AI Token 額度 / 月</strong></td><td class="num">50 萬</td><td class="num">300 萬</td><td class="num">1,500 萬</td></tr>
-    <tr style="background:rgba(77,212,172,0.04);"><td><strong>Datalake 歷史資料</strong></td><td class="num">6 個月</td><td class="num">24 個月</td><td class="num">無限 / 可延伸</td></tr>
-    <tr><td>VOC / 競品 / AI 問答</td><td>—</td><td>✓ 原生內含</td><td>✓ 原生內含</td></tr>
-    <tr><td>BI / API 直連 Datalake</td><td>—</td><td>加購 50,000 円</td><td>✓ 內含</td></tr>
-    <tr><td>Managed 24×365</td><td>—</td><td>—</td><td>加購 200,000 円</td></tr>
-    <tr style="background:rgba(77,212,172,0.08);"><td><strong>月費實際帶</strong></td><td class="num"><strong>88k–120k 円</strong></td><td class="num"><strong>200k–350k 円</strong></td><td class="num"><strong>600k–1,500k 円</strong></td></tr>
-    <tr><td>初期費用（Setup）</td><td class="num">0–50k 円</td><td class="num">100k 円</td><td class="num">300k 円〜</td></tr>
-    <tr><td>最短合約</td><td>1 / 3 個月</td><td>6 個月</td><td>12 個月</td></tr>
-    <tr><td>年 ACV（中位）</td><td class="num">¥1.25M</td><td class="num">¥3.4M</td><td class="num">¥10.8M</td></tr>
+    <tr style="background:rgba(107,164,255,0.05);">
+      <td><strong>運算資源（RAM）</strong></td>
+      <td class="num">8 GB</td>
+      <td class="num">16 GB</td>
+      <td class="num">32 GB</td>
+    </tr>
+    <tr>
+      <td>爬蟲速度 / 監測頻率</td>
+      <td>基礎 / 低頻</td>
+      <td>中等 / 中頻</td>
+      <td>高速 / 高頻（即時）</td>
+    </tr>
+    <tr style="background:rgba(77,212,172,0.05);">
+      <td><strong>Datalake 容量</strong></td>
+      <td class="num"><span class="tag-chip">Data Lake</span>50M tokens</td>
+      <td class="num"><span class="tag-chip">Data Ocean</span>150M tokens</td>
+      <td class="num"><span class="tag-chip">Data Ocean</span>150M tokens</td>
+    </tr>
+    <tr>
+      <td>預估輿情監測報告 / 月</td>
+      <td class="num">約 300 份</td>
+      <td class="num">約 900 份</td>
+      <td class="num">約 900 份（產出更快）</td>
+    </tr>
+    <tr style="background:rgba(255,184,77,0.05);">
+      <td><strong>登入帳號</strong></td>
+      <td class="num">5 組</td>
+      <td class="num">5 組</td>
+      <td class="num">5 組</td>
+    </tr>
+    <tr>
+      <td>追加帳號</td>
+      <td class="num" colspan="3" style="text-align:center;">NT$25,000 / 月 / 帳號（約 ¥117,500 / 月）</td>
+    </tr>
+    <tr>
+      <td>AI 問答 / VOC / 競品</td>
+      <td>基礎</td>
+      <td>✓ 原生內含</td>
+      <td>✓ 原生內含</td>
+    </tr>
+    <tr>
+      <td>BI / API 直連 Datalake</td>
+      <td>—</td>
+      <td>加購</td>
+      <td>✓ 內含</td>
+    </tr>
+    <tr>
+      <td>適用客戶</td>
+      <td>小型品牌<br>低頻監測<br>基礎報表需求</td>
+      <td>中型品牌<br>中頻監測<br>中度分析需求</td>
+      <td>大型企業<br>高頻 / 即時監測<br>決策級報告</td>
+    </tr>
   </tbody>
 </table>
+
+<h3>4.3 Datalake 容量 ↔ 輿情監測報告產出換算</h3>
+<p>以 <strong>Data Ocean 150M Tokens</strong> 為基準（約 900 份報告／月），依品牌聲量高低換算如下：</p>
+<table>
+  <thead>
+    <tr>
+      <th>品牌聲量</th>
+      <th class="num">單份報告文章數</th>
+      <th class="num">Data Ocean（150M）</th>
+      <th class="num">Data Lake（50M）</th>
+      <th>典型應用</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="pill p1">低聲量</span></td>
+      <td class="num">30 篇 / 份</td>
+      <td class="num">約 1,000 份</td>
+      <td class="num">約 333 份</td>
+      <td>利基品牌、區域商家、B2B</td>
+    </tr>
+    <tr style="background:rgba(77,212,172,0.05);">
+      <td><span class="pill p2">混合（基準）</span></td>
+      <td class="num">—</td>
+      <td class="num"><strong>約 900 份</strong></td>
+      <td class="num"><strong>約 300 份</strong></td>
+      <td>一般品牌組合監測</td>
+    </tr>
+    <tr>
+      <td><span class="pill p3">高聲量</span></td>
+      <td class="num">500 篇 / 份</td>
+      <td class="num">約 125 份</td>
+      <td class="num">約 42 份</td>
+      <td>頭部品牌、熱門議題、危機監測</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">※ 一份報告 = 抓取相關文章 → LLM 摘要 + 情緒分析 + 主題萃取 + 結論建議，Token 消耗隨文章數線性成長。</p>
 
 <div class="callout">
   <div class="title">為什麼這個結構適合日本</div>
   <ul class="clean" style="margin-bottom:0;">
-    <li><strong>見積書文化友善</strong>：詞組 / 帳號 / Token / 模組全明碼，利於過內部稟議。</li>
-    <li><strong>客戶語言對齊</strong>：「品牌數＝詞組數」比 Buzz Finder 的「轉送量」更可預測。</li>
-    <li><strong>Datalake 帶來資料資產感</strong>：日本大企業採購最在意的「資料留在自己這」用 GCP 東京 Region + 合約期無限保留直接解。</li>
+    <li><strong>只差兩軸、決策簡單</strong>：客戶只要回答「品牌聲量大小」＋「要不要即時」就能選對方案，過稟議書極快。</li>
+    <li><strong>報告產出量可預測</strong>：Token ↔ 報告份數的換算表讓採購方一目了然，避開競品「無限流量但實際卡頓」的陷阱。</li>
+    <li><strong>Datalake 帶來資料資產感</strong>：GCP 東京 Region + 合約期資料保留，解日本大企業最在意的「資料留在自己這」。</li>
+    <li><strong>帳號統一 5 組</strong>：大多數日本行銷團隊規模 3–5 人，預設即夠；如跨部門共用，NT$25k / 月 / 人彈性擴充。</li>
   </ul>
 </div>
 
@@ -362,7 +438,7 @@
   <tbody>
     <tr>
       <td><span class="pill p1">Phase 1</span> 語言在地化</td>
-      <td>日文版 UI 全面本地化（介面 / 報表 / 通知 / 稟議範本），即可對既有資料源賣 <span class="pill p1">Plan 1</span></td>
+      <td>日文版 UI 全面本地化（介面 / 報表 / 通知 / 稟議範本），即可對既有資料源賣 <span class="pill p1">入門</span></td>
       <td>日文版 MVP 上線</td>
       <td class="num">1 個月</td>
       <td class="num">1 人月</td>
@@ -378,8 +454,8 @@
     </tr>
     <tr>
       <td><span class="pill p3">Phase 3</span> 日本在地渠道接完</td>
-      <td>Threads / Instagram / 5ch / @cosme / 食べログ / 価格.com / 80 站新聞 RSS — 一次接完、解鎖 <span class="pill p2">Plan 2</span> VOC + 競品洞察</td>
-      <td>全渠道覆蓋、Plan 2 可售</td>
+      <td>Threads / Instagram / 5ch / @cosme / 食べログ / 価格.com / 80 站新聞 RSS — 一次接完、解鎖 <span class="pill p2">標準</span> VOC + 競品洞察</td>
+      <td>全渠道覆蓋、標準 / 進階可售</td>
       <td class="num">8–12 個月</td>
       <td class="num">8 人月</td>
       <td class="num">NT$80 萬</td>
@@ -398,7 +474,7 @@
   <ul class="clean" style="margin-bottom:0;">
     <li><strong>類似射出成型開模</strong>：NT$1.2M 是一次性 tooling 費用，由騰雲（母公司）支付，做完後日本產線可持續複用。</li>
     <li><strong>Pandora Japan 拿到的是「已開模的產品」</strong>：不用自己付研發，直接進市場銷售。</li>
-    <li><strong>騰雲的回本邏輯</strong>：NT$10 萬 / 月 × 12 個月年約 = NT$1.2M → <strong>1 家 Plan 2/3 年約客戶就抵掉整筆開模費</strong>。</li>
+    <li><strong>騰雲的回本邏輯</strong>：NT$10 萬 / 月 × 12 個月年約 = NT$1.2M → <strong>1 家標準 / 進階年約客戶就抵掉整筆開模費</strong>。</li>
     <li>後續所有新簽的日本客戶，對騰雲都是淨 ROI 貢獻。</li>
   </ul>
 </div>
@@ -432,12 +508,12 @@
     <tr>
       <td><strong>BigQuery（Datalake 查詢）</strong></td>
       <td>~$5 / TB 掃描、儲存 $0.02 / GB-月</td>
-      <td>P1 含 6 月、P2 含 24 月、P3 無限；超額客戶延伸付儲存費</td>
+      <td>入門 Data Lake 50M / 標準・進階 Data Ocean 150M；超額延伸付儲存費</td>
     </tr>
     <tr>
       <td><strong>Pub/Sub（即時告警）</strong></td>
       <td>~$0.04 / 百萬訊息</td>
-      <td>P1 日報、P2/P3 即時告警內含</td>
+      <td>入門日報；標準 / 進階即時告警內含</td>
     </tr>
     <tr>
       <td><strong>GKE（爬蟲 / API 服務）</strong></td>
@@ -460,7 +536,7 @@
 <table>
   <thead><tr><th>簽約客戶數</th><th class="num">年 ARR（TWD）</th><th>vs 開模費 NT$120 萬</th></tr></thead>
   <tbody>
-    <tr><td>1 家（Plan 2 高階 / P3 入門）</td><td class="num">NT$1.2M</td><td><span class="pill p2">打平開模費</span></td></tr>
+    <tr><td>1 家（標準高階 / 進階入門）</td><td class="num">NT$1.2M</td><td><span class="pill p2">打平開模費</span></td></tr>
     <tr><td>3 家</td><td class="num">NT$3.6M</td><td><span class="pill p2">3x 回收</span></td></tr>
     <tr><td>10 家</td><td class="num">NT$12M</td><td><span class="pill p3">10x 回收，逼近 Y1 整體 OPEX</span></td></tr>
     <tr><td>Y3 預估 140+ 家</td><td class="num">NT$170M+</td><td><span class="pill danger" style="background:rgba(77,212,172,0.15);color:var(--accent-2);">140x 回收 + 淨利數千萬</span></td></tr>
@@ -471,13 +547,13 @@
 <table>
   <thead><tr><th>方案</th><th class="num">Y1 logo</th><th class="num">Y2 logo</th><th class="num">Y3 logo</th><th class="num">Y3 ARR</th></tr></thead>
   <tbody>
-    <tr><td><span class="pill p1">Plan 1</span> × ¥1.25M</td><td class="num">40</td><td class="num">100</td><td class="num">160</td><td class="num">¥200M</td></tr>
-    <tr><td><span class="pill p2">Plan 2</span> × ¥3.4M</td><td class="num">12</td><td class="num">45</td><td class="num">110</td><td class="num">¥374M</td></tr>
-    <tr><td><span class="pill p3">Plan 3</span> × ¥10.8M</td><td class="num">2</td><td class="num">8</td><td class="num">22</td><td class="num">¥238M</td></tr>
+    <tr><td><span class="pill p1">入門</span> × ¥1.25M</td><td class="num">40</td><td class="num">100</td><td class="num">160</td><td class="num">¥200M</td></tr>
+    <tr><td><span class="pill p2">標準</span> × ¥3.4M</td><td class="num">12</td><td class="num">45</td><td class="num">110</td><td class="num">¥374M</td></tr>
+    <tr><td><span class="pill p3">進階</span> × ¥10.8M</td><td class="num">2</td><td class="num">8</td><td class="num">22</td><td class="num">¥238M</td></tr>
     <tr style="background:rgba(77,212,172,0.08);"><td><strong>期末 ARR</strong></td><td class="num"><strong>¥112M</strong></td><td class="num"><strong>¥364M</strong></td><td class="num"><strong>¥812M</strong></td><td class="num"><strong>¥812M</strong></td></tr>
   </tbody>
 </table>
-<p class="note">※ 假設：月新增 Plan 1 3→10；Plan 1→2 升級 30%、Plan 2→3 升級 10%；年流失 15%。</p>
+<p class="note">※ 假設：月新增入門 3→10；入門→標準 升級 30%、標準→進階 升級 10%；年流失 15%。</p>
 
 <h3>6.3 Pandora Japan P&amp;L（Y1–Y3）</h3>
 <table>
