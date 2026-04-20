@@ -1,0 +1,7 @@
+.claude/
+*.local.json
+.DS_Store
+Thumbs.db
+node_modules/
+.env
+.env.local
