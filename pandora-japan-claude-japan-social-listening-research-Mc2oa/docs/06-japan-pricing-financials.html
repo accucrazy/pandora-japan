@@ -117,13 +117,13 @@
   <div class="inner">
     <div class="tag">Pandora Japan · Pricing & Financial Model</div>
     <h1>日本市場定價策略與三年財務模擬</h1>
-    <p class="lede">Pandora「關鍵字詞組 + 帳號」模組化計價，對齊日本 SNS 行銷 ¥1.1 兆円市場、分析工具 ¥75 億円 SAM；兩階段上市 → 三年回本。</p>
+    <p class="lede">Pandora「關鍵字詞組 + 帳號」模組化計價，對齊日本 SNS 行銷 ¥1.1 兆円市場、分析工具 ¥75 億円 SAM；<strong style="color:var(--accent-2);">初期開發僅需 NT$1.2M，1 家年約客戶即回本</strong>。</p>
     <div class="hero-kpi">
-      <div class="kpi"><div class="k-label">SNS 行銷 TAM</div><div class="k-val">¥1.1T</div></div>
-      <div class="kpi"><div class="k-label">分析工具 SAM</div><div class="k-val accent">¥7.5B</div></div>
+      <div class="kpi"><div class="k-label">初期開發</div><div class="k-val accent">NT$1.2M</div></div>
+      <div class="kpi"><div class="k-label">回本客戶數</div><div class="k-val green">1 家</div></div>
+      <div class="kpi"><div class="k-label">分析工具 SAM</div><div class="k-val">¥7.5B</div></div>
       <div class="kpi"><div class="k-label">潛在付費客戶</div><div class="k-val">~14,960</div></div>
       <div class="kpi"><div class="k-label">Y3 ARR 目標</div><div class="k-val green">¥812M</div></div>
-      <div class="kpi"><div class="k-label">回本時點</div><div class="k-val green">Y2 Q2</div></div>
     </div>
     <nav class="toc">
       <a href="#market">① 市場錨點</a>
@@ -236,37 +236,47 @@
 <h2 id="cost"><span class="num">05</span>潛在成本（兩階段上市，TWD）</h2>
 <p>成本以新台幣標示，匯率 <strong>1 TWD ≒ 4.7 JPY</strong>。雲端採 <strong>GCP asia-northeast1（東京）</strong>符合 APPI。</p>
 
+<h3>5.1 初期開發投入：NT$1.2M</h3>
+<p>兩階段合計只需 <strong>2 位 RD × 6 個月</strong>，一次性 MVP 開發費用。</p>
+<table>
+  <thead><tr><th>階段</th><th>內容</th><th>人力</th><th class="num">成本</th></tr></thead>
+  <tbody>
+    <tr><td><span class="pill p1">Phase 1</span> 日文版 MVP（Y1 Q1–Q2）</td><td>日文 UI 本地化 + X（雙軌）+ 基礎日本新聞 RSS → 可賣 Plan 1</td><td>1 RD × 6 月 × NT$10 萬</td><td class="num">NT$0.6M</td></tr>
+    <tr><td><span class="pill p2">Phase 2</span> 日本在地渠道（Y1 Q3–Q4）</td><td>Threads / IG / 5ch / Review 站 / 新聞擴充 → 解鎖 Plan 2</td><td>1 RD × 6 月 × NT$10 萬</td><td class="num">NT$0.6M</td></tr>
+    <tr style="background:rgba(77,212,172,0.1);"><td colspan="3"><strong>初期開發合計</strong></td><td class="num"><strong>NT$1.2M</strong></td></tr>
+  </tbody>
+</table>
+
 <div class="callout">
-  <div class="title">Y1 分兩階段：先日文版、再日本渠道</div>
-  <ul class="clean" style="margin-bottom:0;">
-    <li><strong>Phase 1｜日文版 MVP（Y1 Q1–Q2）</strong>：日文 UI 本地化 + X（API + 自寫雙軌）+ 基礎日本新聞 RSS → 可賣 <span class="pill p1">Plan 1</span>。本地化由 3 FTE 平台團隊消化。</li>
-    <li><strong>Phase 2｜日本在地渠道（Y1 Q3 起）</strong>：1 RD × 6 個月建 Threads / IG / 5ch / Review / 新聞擴充 → 解鎖 <span class="pill p2">Plan 2</span>。YouTube / TikTok 延至 Y2。</li>
+  <div class="title">1 家年約客戶即可 cover 初期成本</div>
+  <div class="formula" style="margin:10px 0 0;">
+    <strong style="color:var(--accent-2);">回本算式：</strong>NT$10 萬 / 月 × 12 個月 年約 = <strong style="color:var(--accent-2);">NT$1.2M</strong>　→　與初期開發 NT$1.2M 打平
+  </div>
+  <ul class="clean" style="margin:10px 0 0;">
+    <li>月費 NT$10 萬 ≒ ¥470k / 月，落在 <span class="pill p2">Plan 2</span> 高階或 <span class="pill p3">Plan 3</span> 入門的區間。</li>
+    <li>Y1 目標只要簽下 <strong>1 家年約 Plan 2/3 客戶</strong>，開發成本立即攤平；後續所有簽約客戶都是淨貢獻。</li>
+    <li>簽 2 家年約 → ARR NT$2.4M，直接進入獲利；簽 10 家年約 → ARR NT$12M，已逼近 Y1 技術總投入。</li>
   </ul>
 </div>
 
-<h3>5.1 Y1 技術 / 爬蟲成本明細</h3>
+<h3>5.2 其他 Y1 技術支出（非一次性）</h3>
 <table>
   <thead><tr><th>項目</th><th class="num">Y1 成本</th><th>說明</th></tr></thead>
   <tbody>
-    <tr style="background:rgba(107,164,255,0.06);"><td colspan="3" style="color:var(--accent-3);font-weight:600;">Phase 1｜日文版 MVP（Y1 Q1–Q2）　小計 NT$2.7M</td></tr>
-    <tr><td>X API Pro（A 軌）</td><td class="num">NT$2.5M</td><td>$5k USD/月 × 12</td></tr>
-    <tr><td>X 自寫爬蟲工具 / 代理 IP（B 軌）</td><td class="num">NT$0.2M</td><td>Y1 雙軌評估，H2 決定主軌</td></tr>
-    <tr style="background:rgba(77,212,172,0.06);"><td colspan="3" style="color:var(--accent-2);font-weight:600;">Phase 2｜日本在地渠道（Y1 Q3–Q4）　小計 NT$0.9M</td></tr>
-    <tr><td>爬蟲 RD（1 × 6 月 × NT$10 萬）</td><td class="num">NT$0.6M</td><td>Threads / IG / 5ch / Review / 新聞共用</td></tr>
-    <tr><td>代理 IP / 反爬工具 / 法務</td><td class="num">NT$0.3M</td><td>含 TOS 與 APPI 合規審查</td></tr>
-    <tr style="background:rgba(255,255,255,0.03);"><td colspan="3" style="color:var(--text-dim);font-weight:600;">共用基礎建設（整年）　小計 NT$8.9M</td></tr>
+    <tr><td>X API Pro 年費</td><td class="num">NT$2.5M</td><td>$5k USD/月 × 12（唯一大額外購）</td></tr>
+    <tr><td>代理 IP / 反爬工具 / 法務</td><td class="num">NT$0.5M</td><td>Phase 1/2 共用，含 TOS / APPI 審查</td></tr>
     <tr><td>後端 / 資料工程師 × 3 FTE</td><td class="num">NT$6.9M</td><td>平台、管線、日文 UI 本地化</td></tr>
     <tr><td>AI / LLM API</td><td class="num">NT$1.2M</td><td>摘要、問答、月報</td></tr>
     <tr><td>GCP（東京 Region）</td><td class="num">NT$0.8M</td><td>BigQuery / Pub/Sub / GKE</td></tr>
-    <tr style="background:rgba(77,212,172,0.1);"><td><strong>Y1 技術合計</strong></td><td class="num"><strong>NT$12.5M</strong></td><td>Phase 1 + Phase 2 + 基礎建設</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>Y1 技術合計（含初期開發）</strong></td><td class="num"><strong>NT$13.1M</strong></td><td>NT$1.2M 開發 + NT$11.9M 維運 / 授權</td></tr>
   </tbody>
 </table>
 
 <h3>5.2 三年成本曲線</h3>
 <div class="stacked-chart">
   <div class="stacked-col">
-    <div class="total">NT$20.8M</div>
-    <div class="seg" style="height:120px; background:#4dd4ac;"></div>
+    <div class="total">NT$21.4M</div>
+    <div class="seg" style="height:126px; background:#4dd4ac;"></div>
     <div class="seg" style="height:50px; background:#6ba4ff;"></div>
     <div class="seg" style="height:30px; background:#ffb84d;"></div>
     <div class="label">Year 1</div>
@@ -295,10 +305,10 @@
 <table>
   <thead><tr><th>成本項</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th>成長動因</th></tr></thead>
   <tbody>
-    <tr style="background:rgba(77,212,172,0.08);"><td><strong>技術 / 爬蟲</strong></td><td class="num"><strong>NT$12.5M</strong></td><td class="num"><strong>NT$21.3M</strong></td><td class="num"><strong>NT$28.7M</strong></td><td>Y2 加 YouTube/TikTok 維運；Y3 海外語系</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>技術 / 爬蟲</strong></td><td class="num"><strong>NT$13.1M</strong></td><td class="num"><strong>NT$21.3M</strong></td><td class="num"><strong>NT$28.7M</strong></td><td>Y1 含 NT$1.2M 初期開發；Y2 加 YouTube/TikTok</td></tr>
     <tr><td>銷售 / CS / 在地 PM</td><td class="num">NT$5.1M</td><td class="num">NT$7.7M</td><td class="num">NT$12.8M</td><td>Y1 3 人 → Y3 6 人</td></tr>
     <tr><td>行銷 + 合規 + 其他</td><td class="num">NT$3.2M</td><td class="num">NT$4.7M</td><td class="num">NT$7.5M</td><td>含 ISMS / APPI / 合同会社</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>合計（TWD）</strong></td><td class="num"><strong>NT$20.8M</strong></td><td class="num"><strong>NT$33.6M</strong></td><td class="num"><strong>NT$48.9M</strong></td><td>對應日幣 ¥98M / ¥158M / ¥230M</td></tr>
+    <tr style="background:rgba(255,107,107,0.08);"><td><strong>合計（TWD）</strong></td><td class="num"><strong>NT$21.4M</strong></td><td class="num"><strong>NT$33.6M</strong></td><td class="num"><strong>NT$48.9M</strong></td><td>對應日幣 ¥101M / ¥158M / ¥230M</td></tr>
   </tbody>
 </table>
 
@@ -323,16 +333,17 @@
   <tbody>
     <tr><td>認列 Revenue（JPY）</td><td class="num">¥61M</td><td class="num">¥238M</td><td class="num">¥588M</td><td class="num">¥887M</td></tr>
     <tr><td>認列 Revenue（TWD）</td><td class="num">NT$13.0M</td><td class="num">NT$50.6M</td><td class="num">NT$125.1M</td><td class="num">NT$188.7M</td></tr>
-    <tr><td>成本 OPEX（TWD）</td><td class="num">NT$20.8M</td><td class="num">NT$33.6M</td><td class="num">NT$48.9M</td><td class="num">NT$103.3M</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>年度損益（TWD）</strong></td><td class="num" style="color:var(--accent);"><strong>-NT$7.8M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$17.0M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$76.2M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$85.4M</strong></td></tr>
-    <tr><td>累計損益（TWD）</td><td class="num" style="color:var(--accent);">-NT$7.8M</td><td class="num">+NT$9.2M</td><td class="num" style="color:var(--accent-2);">+NT$85.4M</td><td class="num">—</td></tr>
+    <tr><td>成本 OPEX（TWD）</td><td class="num">NT$21.4M</td><td class="num">NT$33.6M</td><td class="num">NT$48.9M</td><td class="num">NT$103.9M</td></tr>
+    <tr style="background:rgba(255,107,107,0.08);"><td><strong>年度損益（TWD）</strong></td><td class="num" style="color:var(--accent);"><strong>-NT$8.4M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$17.0M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$76.2M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$84.8M</strong></td></tr>
+    <tr><td>累計損益（TWD）</td><td class="num" style="color:var(--accent);">-NT$8.4M</td><td class="num">+NT$8.6M</td><td class="num" style="color:var(--accent-2);">+NT$84.8M</td><td class="num">—</td></tr>
   </tbody>
 </table>
 
 <div class="callout">
   <div class="title">關鍵財務結論</div>
   <ul class="clean" style="margin-bottom:0;">
-    <li><strong>Y1 虧損 NT$7.8M</strong>（¥37M），需預備至少 <strong>NT$10M 現金緩衝</strong>。Phase 1 在 Y1 Q2 即可收 Plan 1 客戶，cover Phase 2 投入。</li>
+    <li><strong>初期開發 NT$1.2M（2 RD × 6 月）</strong>＝ 1 家年約 NT$10 萬 / 月客戶整年繳的錢，純開發成本風險極低。</li>
+    <li><strong>Y1 虧損 NT$8.4M</strong>（¥40M），主要是 X API 授權費 + 3 FTE 人事，需預備 <strong>NT$10M 現金緩衝</strong>。</li>
     <li><strong>Y2 Q2 累計損益平衡</strong>，整年獲利 NT$17M。</li>
     <li><strong>Y3 營運槓桿顯現</strong>：收入翻 2.5x、成本僅增 45%，年利潤 <strong>NT$76M（利潤率 61%）</strong>。</li>
     <li>Y3 期末 ARR ¥812M → SaaS 4–6x 倍數估值約 <strong>¥32–49 億円</strong>。</li>
