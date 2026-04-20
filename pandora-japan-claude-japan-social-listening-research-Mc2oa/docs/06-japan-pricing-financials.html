@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -132,7 +132,6 @@
       <a href="#competitor">③ 主要競爭者分析</a>
       <a href="#product">④ Pandora 方案規格</a>
       <a href="#cost">⑤ 研發開發成本</a>
-      <a href="#revenue">⑥ 回本模擬</a>
     </nav>
   </div>
 </header>
@@ -523,58 +522,6 @@
   </tbody>
 </table>
 <p class="note">※ Token 是變動成本（隨客戶使用量變化）、Datalake 是固定 + 少量變動成本；兩者毛利率分別 ~60% 與 ~75%，整體 COGS 毛利率維持 70%+。</p>
-
-<!-- ==================== 6 回本模擬 ==================== -->
-<h2 id="revenue"><span class="num">06</span>回本模擬（騰雲視角）</h2>
-
-<h3>6.1 開模費回本：1 家年約客戶即打平</h3>
-<div class="formula">
-  <strong style="color:var(--accent-2);">騰雲開模費：</strong>2 工程師 × 6 個月 × NT$10 萬 = <strong>NT$120 萬</strong><br>
-  <strong style="color:var(--accent-2);">回本客戶：</strong>1 家年約 × NT$10 萬 / 月 × 12 個月 = <strong>NT$120 萬</strong>　→　打平
-</div>
-
-<table>
-  <thead><tr><th>簽約客戶數</th><th class="num">年 ARR（TWD）</th><th>vs 開模費 NT$120 萬</th></tr></thead>
-  <tbody>
-    <tr><td>1 家（標準高階 / 進階入門）</td><td class="num">NT$1.2M</td><td><span class="pill p2">打平開模費</span></td></tr>
-    <tr><td>3 家</td><td class="num">NT$3.6M</td><td><span class="pill p2">3x 回收</span></td></tr>
-    <tr><td>10 家</td><td class="num">NT$12M</td><td><span class="pill p3">10x 回收，逼近 Y1 整體 OPEX</span></td></tr>
-    <tr><td>Y3 預估 140+ 家</td><td class="num">NT$170M+</td><td><span class="pill danger" style="background:rgba(77,212,172,0.15);color:var(--accent-2);">140x 回收 + 淨利數千萬</span></td></tr>
-  </tbody>
-</table>
-
-<h3>6.2 三年客戶漏斗（基準情境）</h3>
-<table>
-  <thead><tr><th>方案</th><th class="num">Y1 logo</th><th class="num">Y2 logo</th><th class="num">Y3 logo</th><th class="num">Y3 ARR</th></tr></thead>
-  <tbody>
-    <tr><td><span class="pill p1">入門</span> × ¥1.25M</td><td class="num">40</td><td class="num">100</td><td class="num">160</td><td class="num">¥200M</td></tr>
-    <tr><td><span class="pill p2">標準</span> × ¥3.4M</td><td class="num">12</td><td class="num">45</td><td class="num">110</td><td class="num">¥374M</td></tr>
-    <tr><td><span class="pill p3">進階</span> × ¥10.8M</td><td class="num">2</td><td class="num">8</td><td class="num">22</td><td class="num">¥238M</td></tr>
-    <tr style="background:rgba(77,212,172,0.08);"><td><strong>期末 ARR</strong></td><td class="num"><strong>¥112M</strong></td><td class="num"><strong>¥364M</strong></td><td class="num"><strong>¥812M</strong></td><td class="num"><strong>¥812M</strong></td></tr>
-  </tbody>
-</table>
-<p class="note">※ 假設：月新增入門 3→10；入門→標準 升級 30%、標準→進階 升級 10%；年流失 15%。</p>
-
-<h3>6.3 Pandora Japan P&amp;L（Y1–Y3）</h3>
-<table>
-  <thead><tr><th>項目</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th></tr></thead>
-  <tbody>
-    <tr><td>認列 Revenue（TWD）</td><td class="num">NT$13.0M</td><td class="num">NT$50.6M</td><td class="num">NT$125.1M</td></tr>
-    <tr><td>OPEX（不含開模費）</td><td class="num">NT$20.2M</td><td class="num">NT$31.7M</td><td class="num">NT$46.8M</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>年度損益</strong></td><td class="num" style="color:var(--accent);"><strong>-NT$7.2M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$18.9M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$78.3M</strong></td></tr>
-    <tr><td>累計損益</td><td class="num" style="color:var(--accent);">-NT$7.2M</td><td class="num">+NT$11.7M</td><td class="num" style="color:var(--accent-2);">+NT$90.0M</td></tr>
-  </tbody>
-</table>
-
-<div class="callout">
-  <div class="title">關鍵結論</div>
-  <ul class="clean" style="margin-bottom:0;">
-    <li><strong>開模費 NT$120 萬</strong> 由騰雲一次性支付，<strong>1 家年約客戶即可回收</strong>，是極低風險投資。</li>
-    <li>Pandora Japan Y1 虧損 NT$7.2M（主要為 X API 與 3 FTE 人事），需預備 NT$10M 現金緩衝。</li>
-    <li><strong>Y2 Q2 累計損益平衡</strong>，Y3 年利潤 NT$78M（利潤率 63%）。</li>
-    <li>Y3 ARR ¥812M → SaaS 4–6x 倍數估值約 <strong>¥32–49 億円</strong>。</li>
-  </ul>
-</div>
 
 </main>
 
