@@ -28,58 +28,39 @@
   }
   header.hero .inner { max-width: 1180px; margin: 0 auto; }
   header.hero .tag { color: var(--accent); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
-  header.hero h1 { font-size: 42px; margin: 0 0 12px; letter-spacing: -0.5px; }
-  header.hero p.lede { color: var(--text-dim); font-size: 16px; max-width: 760px; margin: 0; }
+  header.hero h1 { font-size: 38px; margin: 0 0 12px; letter-spacing: -0.5px; }
+  header.hero p.lede { color: var(--text-dim); font-size: 15px; max-width: 760px; margin: 0; }
   nav.toc {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 20px 24px;
-    margin-top: 32px;
+    padding: 16px 22px;
+    margin-top: 28px;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 28px;
+    gap: 12px 24px;
     font-size: 14px;
   }
   nav.toc a { color: var(--text-dim); text-decoration: none; }
   nav.toc a:hover { color: var(--accent-2); }
-  h2 { font-size: 28px; margin: 64px 0 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  h2 { font-size: 26px; margin: 56px 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
   h2 .num { color: var(--accent); font-family: ui-monospace, monospace; margin-right: 12px; }
-  h3 { font-size: 19px; margin: 32px 0 12px; color: var(--text); }
+  h3 { font-size: 18px; margin: 28px 0 10px; color: var(--text); }
   p { color: var(--text-dim); }
   p strong, li strong { color: var(--text); }
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px 28px;
-    margin: 16px 0;
-  }
-  .card.highlight {
-    border-color: var(--accent);
-    background: linear-gradient(135deg, rgba(255,107,107,0.08), rgba(255,107,107,0.02));
-  }
-  .grid { display: grid; gap: 16px; }
+  .grid { display: grid; gap: 14px; }
   .grid-2 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
   .grid-4 { grid-template-columns: repeat(4, 1fr); }
-  @media (max-width: 780px) {
-    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  }
-  .stat {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 20px;
-  }
+  @media (max-width: 780px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
   .stat .label { color: var(--text-dim); font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; }
-  .stat .value { color: var(--text); font-size: 28px; font-weight: 600; margin: 6px 0 4px; }
+  .stat .value { color: var(--text); font-size: 26px; font-weight: 600; margin: 6px 0 4px; }
   .stat .sub { color: var(--muted); font-size: 13px; }
   .stat.accent .value { color: var(--accent-2); }
   .stat.warn .value { color: var(--warn); }
-  .stat.neg .value { color: var(--accent); }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
-  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--border); vertical-align: top; }
   th { color: var(--text-dim); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; background: var(--surface-2); }
   td.num, th.num { text-align: right; font-family: ui-monospace, monospace; }
   tr:hover td { background: rgba(255,255,255,0.02); }
@@ -92,53 +73,40 @@
     background: var(--surface-2);
     border-left: 3px solid var(--accent-2);
     border-radius: 4px;
-    padding: 16px 20px;
+    padding: 14px 18px;
     font-family: ui-monospace, "SF Mono", monospace;
     font-size: 13px;
     color: var(--text);
-    margin: 16px 0;
+    margin: 14px 0;
     overflow-x: auto;
   }
   .note { color: var(--muted); font-size: 13px; font-style: italic; }
   ul.clean { padding-left: 20px; color: var(--text-dim); }
-  ul.clean li { margin: 6px 0; }
-  .bar-chart { margin: 20px 0; }
-  .bar-row { display: grid; grid-template-columns: 120px 1fr 110px; align-items: center; gap: 12px; margin: 8px 0; font-size: 13px; }
-  .bar-row .name { color: var(--text-dim); }
-  .bar-row .bar-wrap { background: var(--surface-2); border-radius: 4px; height: 26px; position: relative; overflow: hidden; }
-  .bar-row .bar { height: 100%; border-radius: 4px; }
-  .bar-row .amt { text-align: right; font-family: ui-monospace, monospace; color: var(--text); }
-  .bar.c1 { background: linear-gradient(90deg, #6ba4ff 0%, #4b89e6 100%); }
-  .bar.c2 { background: linear-gradient(90deg, #4dd4ac 0%, #2fb38a 100%); }
-  .bar.c3 { background: linear-gradient(90deg, #ffb84d 0%, #e69a2c 100%); }
-  .bar.c4 { background: linear-gradient(90deg, #ff6b6b 0%, #e64545 100%); }
+  ul.clean li { margin: 5px 0; }
   .callout {
     background: rgba(77, 212, 172, 0.06);
     border: 1px solid rgba(77, 212, 172, 0.3);
     border-radius: 8px;
-    padding: 16px 20px;
-    margin: 16px 0;
+    padding: 14px 18px;
+    margin: 14px 0;
     color: var(--text);
   }
-  .callout.warn {
-    background: rgba(255, 184, 77, 0.06);
-    border-color: rgba(255, 184, 77, 0.3);
-  }
+  .callout.warn { background: rgba(255, 184, 77, 0.06); border-color: rgba(255, 184, 77, 0.3); }
   .callout .title { color: var(--accent-2); font-weight: 600; margin-bottom: 6px; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
   .callout.warn .title { color: var(--warn); }
-  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 0 20px; border-top: 1px solid var(--border); margin-top: 80px; }
-  .stacked-chart { display: flex; height: 280px; align-items: flex-end; gap: 28px; padding: 20px 0; border-bottom: 1px solid var(--border); margin: 20px 0; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 32px 0 20px; border-top: 1px solid var(--border); margin-top: 60px; }
+  .stacked-chart { display: flex; height: 240px; align-items: flex-end; gap: 28px; padding: 20px 0; border-bottom: 1px solid var(--border); margin: 16px 0; }
   .stacked-col { flex: 1; display: flex; flex-direction: column-reverse; gap: 2px; position: relative; }
   .stacked-col .seg { width: 100%; }
-  .stacked-col .label { position: absolute; bottom: -26px; left: 0; right: 0; text-align: center; color: var(--text-dim); font-size: 12px; }
-  .stacked-col .total { position: absolute; top: -26px; left: 0; right: 0; text-align: center; color: var(--text); font-size: 13px; font-weight: 600; font-family: ui-monospace, monospace; }
-  .legend { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; color: var(--text-dim); margin-top: 14px; }
+  .stacked-col .label { position: absolute; bottom: -24px; left: 0; right: 0; text-align: center; color: var(--text-dim); font-size: 12px; }
+  .stacked-col .total { position: absolute; top: -24px; left: 0; right: 0; text-align: center; color: var(--text); font-size: 13px; font-weight: 600; font-family: ui-monospace, monospace; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--text-dim); margin-top: 12px; }
   .legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
-  .hero-kpi { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 28px; }
+  .hero-kpi { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 24px; }
   @media (max-width: 780px) { .hero-kpi { grid-template-columns: repeat(2, 1fr); } }
-  .hero-kpi .kpi { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .hero-kpi .kpi { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
   .hero-kpi .k-label { color: var(--text-dim); font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; }
-  .hero-kpi .k-val { color: var(--text); font-size: 24px; font-weight: 700; font-family: ui-monospace, monospace; margin-top: 4px; letter-spacing: -0.5px; }
+  .hero-kpi .k-val { color: var(--text); font-size: 22px; font-weight: 700; font-family: ui-monospace, monospace; margin-top: 4px; letter-spacing: -0.5px; }
   .hero-kpi .k-val.accent { color: var(--accent); }
   .hero-kpi .k-val.green { color: var(--accent-2); }
 </style>
@@ -148,8 +116,8 @@
 <header class="hero">
   <div class="inner">
     <div class="tag">Pandora Japan · Pricing & Financial Model</div>
-    <h1>日本市場定價策略與三年潛在收入 / 成本模擬</h1>
-    <p class="lede">將 Pandora「關鍵字詞組 + 帳號」模組化計價邏輯，對齊日本 2025 年約 1.1 兆日圓 SNS 行銷市場、75 億日圓社群分析工具市場，拆解潛在客戶數、三年營收與成本曲線、關鍵回本門檻。</p>
+    <h1>日本市場定價策略與三年財務模擬</h1>
+    <p class="lede">Pandora「關鍵字詞組 + 帳號」模組化計價，對齊日本 SNS 行銷 ¥1.1 兆円市場、分析工具 ¥75 億円 SAM；兩階段上市 → 三年回本。</p>
     <div class="hero-kpi">
       <div class="kpi"><div class="k-label">SNS 行銷 TAM</div><div class="k-val">¥1.1T</div></div>
       <div class="kpi"><div class="k-label">分析工具 SAM</div><div class="k-val accent">¥7.5B</div></div>
@@ -159,600 +127,202 @@
     </div>
     <nav class="toc">
       <a href="#market">① 市場錨點</a>
-      <a href="#customers">② 潛在客戶推估</a>
-      <a href="#pricing">③ 關鍵字詞組+帳號計價</a>
-      <a href="#benchmark">④ 對標市場策略</a>
+      <a href="#customers">② 潛在客戶</a>
+      <a href="#pricing">③ 定價邏輯</a>
+      <a href="#benchmark">④ 對標策略</a>
       <a href="#cost">⑤ 潛在成本</a>
-      <a href="#revenue">⑥ 潛在收入 / 三年模擬</a>
-      <a href="#unit">⑦ 單位經濟與回本</a>
-      <a href="#risk">⑧ 風險與敏感度</a>
+      <a href="#revenue">⑥ 潛在收入</a>
+      <a href="#unit">⑦ 單位經濟</a>
+      <a href="#risk">⑧ 風險</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
 
-<!-- ==================== 1 市場錨點 ==================== -->
+<!-- ==================== 1 市場 ==================== -->
 <h2 id="market"><span class="num">01</span>日本市場錨點</h2>
-<p>以 2025 年為基準年，拆解 Pandora 所處的「可銷售市場（SAM）」。</p>
-
 <div class="grid grid-4">
-  <div class="stat"><div class="label">Total SNS 行銷 TAM</div><div class="value">1.1 兆円</div><div class="sub">2025 日本 SNS 行銷整體</div></div>
-  <div class="stat accent"><div class="label">分析工具 SAM</div><div class="value">75 億円</div><div class="sub">占 TAM 約 0.68%</div></div>
-  <div class="stat"><div class="label">市場成熟度</div><div class="value">58.5%</div><div class="sub">相關部門已導入（NTT 2023）</div></div>
+  <div class="stat"><div class="label">SNS 行銷 TAM</div><div class="value">1.1 兆円</div><div class="sub">2025 日本整體</div></div>
+  <div class="stat accent"><div class="label">分析工具 SAM</div><div class="value">75 億円</div><div class="sub">Pandora 核心</div></div>
+  <div class="stat"><div class="label">市場成熟度</div><div class="value">58.5%</div><div class="sub">相關部門已導入</div></div>
   <div class="stat warn"><div class="label">付費工具使用率</div><div class="value">57.1%</div><div class="sub">替換 / 升級市場</div></div>
 </div>
+<p class="note">※ 資料來源：NTT 2023、矢野經濟、日經 MJ。Pandora SAM 集中在「分析工具」75 億円（占 TAM 6.8%）；Managed / 顧問收入可再延伸切 SNS 運營 1,320 億円的一部分。</p>
 
-<div class="card">
-  <h3>市場結構拆解</h3>
-  <div class="bar-chart">
-    <div class="bar-row"><div class="name">SNS 廣告投放</div><div class="bar-wrap"><div class="bar c1" style="width:65%"></div></div><div class="amt">約 7,150 億円</div></div>
-    <div class="bar-row"><div class="name">Influencer / KOL</div><div class="bar-wrap"><div class="bar c2" style="width:15%"></div></div><div class="amt">約 1,650 億円</div></div>
-    <div class="bar-row"><div class="name">SNS 運營 / 代操</div><div class="bar-wrap"><div class="bar c3" style="width:12%"></div></div><div class="amt">約 1,320 億円</div></div>
-    <div class="bar-row"><div class="name">分析工具 (Pandora SAM)</div><div class="bar-wrap"><div class="bar c4" style="width:6.8%"></div></div><div class="amt">75 億円</div></div>
-    <div class="bar-row"><div class="name">其他（顧問/研究）</div><div class="bar-wrap"><div class="bar c1" style="width:1.2%"></div></div><div class="amt">約 130 億円</div></div>
-  </div>
-  <p class="note">※ 數字為依 NTT、矢野經濟、日經 MJ 等公開資料推估。Pandora 的 SAM 集中在「分析工具」75 億円；但 Managed Service、顧問、代操收入可延伸再切「SNS 運營」1,320 億円的一部分。</p>
-</div>
-
-<!-- ==================== 2 潛在客戶推估 ==================== -->
-<h2 id="customers"><span class="num">02</span>日本潛在客戶數推估</h2>
-<p>以企業規模與既有社群分析工具採用率反推「現在正在付費的客戶數」與「可被替換 / 升級的客戶數」。</p>
-
+<!-- ==================== 2 客戶 ==================== -->
+<h2 id="customers"><span class="num">02</span>潛在客戶推估</h2>
 <table>
-  <thead><tr><th>層級</th><th>企業數</th><th>社群分析工具採用率</th><th>付費客戶數（推估）</th><th>Pandora 可打擊</th></tr></thead>
+  <thead><tr><th>層級</th><th class="num">企業數</th><th class="num">採用率</th><th class="num">付費客戶</th><th>主要方案</th></tr></thead>
   <tbody>
-    <tr><td><strong>大企業</strong>（>1,000 人）</td><td class="num">約 4,500</td><td class="num">70%</td><td class="num">3,150</td><td><span class="pill p3">Plan 3</span> 核心</td></tr>
-    <tr><td><strong>中堅企業</strong>（300–1,000 人）</td><td class="num">約 13,000</td><td class="num">35%</td><td class="num">4,550</td><td><span class="pill p2">Plan 2</span> 核心</td></tr>
-    <tr><td><strong>中小品牌企業</strong>（50–300 人）</td><td class="num">約 55,000</td><td class="num">8%</td><td class="num">4,400</td><td><span class="pill p1">Plan 1</span> / <span class="pill p2">Plan 2</span></td></tr>
-    <tr><td><strong>廣告 / 公關代理商</strong></td><td class="num">約 5,200</td><td class="num">55%</td><td class="num">2,860</td><td>通路 + 自用</td></tr>
-    <tr style="background: rgba(255,107,107,0.06);"><td><strong>合計潛在付費客戶</strong></td><td class="num">—</td><td class="num">—</td><td class="num"><strong>約 14,960 家</strong></td><td>整體 SAM 客戶池</td></tr>
+    <tr><td>大企業（&gt;1,000 人）</td><td class="num">4,500</td><td class="num">70%</td><td class="num">3,150</td><td><span class="pill p3">Plan 3</span></td></tr>
+    <tr><td>中堅（300–1,000 人）</td><td class="num">13,000</td><td class="num">35%</td><td class="num">4,550</td><td><span class="pill p2">Plan 2</span></td></tr>
+    <tr><td>中小品牌（50–300 人）</td><td class="num">55,000</td><td class="num">8%</td><td class="num">4,400</td><td><span class="pill p1">P1</span> / <span class="pill p2">P2</span></td></tr>
+    <tr><td>廣告 / 公關代理商</td><td class="num">5,200</td><td class="num">55%</td><td class="num">2,860</td><td>通路 + 自用</td></tr>
+    <tr style="background:rgba(255,107,107,0.06);"><td><strong>合計潛在客戶</strong></td><td class="num">—</td><td class="num">—</td><td class="num"><strong>14,960</strong></td><td>SAM 客戶池</td></tr>
   </tbody>
 </table>
-
-<div class="callout">
-  <div class="title">交叉驗證：自上而下</div>
-  75 億円 ÷ 平均 ACV 240 萬円 ≒ <strong>3,125 家活躍付費客戶</strong>（假設大中小客戶混合，平均月費 20 萬円）。與上表「真正正在使用付費工具的家數（約 3,000–4,000 家）」相吻合；剩下約 1 萬家是「低度使用 / 免費工具 / 未採用」的升級機會。
-</div>
 
 <div class="grid grid-3">
-  <div class="stat accent"><div class="label">Serviceable Obtainable Market (SOM)</div><div class="value">3,000–4,000</div><div class="sub">目前已付費、可被替換的核心池</div></div>
-  <div class="stat"><div class="label">升級機會池</div><div class="value">約 10,000</div><div class="sub">低度使用、可教育升級</div></div>
-  <div class="stat warn"><div class="label">Pandora 3 年目標市佔</div><div class="value">8–10%</div><div class="sub">相當於 240–400 付費 logo</div></div>
+  <div class="stat accent"><div class="label">SOM 核心池</div><div class="value">3,000–4,000</div><div class="sub">已付費、可替換</div></div>
+  <div class="stat"><div class="label">升級機會池</div><div class="value">約 10,000</div><div class="sub">低度使用</div></div>
+  <div class="stat warn"><div class="label">3 年市佔目標</div><div class="value">8–10%</div><div class="sub">240–400 logo</div></div>
 </div>
+<p class="note">※ 交叉驗證：75 億円 ÷ 平均 ACV 240 萬円 ≒ 3,125 家活躍付費戶。核心打擊產業：化妝品、食品飲料、零售 EC、自動車、金融、娛樂遊戲、代理商。</p>
 
-<h3>2.1 產業別潛在客戶拆解（SOM 3,500 家 基準）</h3>
-<p>依日本社群輿情 / ソーシャルリスニング 最典型的採購產業，把 SOM 再切成 8 個垂直，用來對應銷售節奏。</p>
-<table>
-  <thead><tr><th>產業垂直</th><th class="num">占 SOM</th><th class="num">潛在家數</th><th>主要 Use Case</th><th>優先方案</th></tr></thead>
-  <tbody>
-    <tr><td>化妝品 / 美妝 / 個人護理</td><td class="num">14%</td><td class="num">約 490</td><td>新品聲量、KOL、VOC 痛點、@cosme/Twitter</td><td><span class="pill p2">Plan 2</span></td></tr>
-    <tr><td>食品 / 飲料 / 外食連鎖</td><td class="num">13%</td><td class="num">約 455</td><td>炎上監測、口味 VOC、店舖地區分析</td><td><span class="pill p1">P1</span>+<span class="pill p2">P2</span></td></tr>
-    <tr><td>自動車 / 精密機械</td><td class="num">11%</td><td class="num">約 385</td><td>跨國品牌、海外監測、競品對比</td><td><span class="pill p3">Plan 3</span></td></tr>
-    <tr><td>零售 / EC / 百貨</td><td class="num">12%</td><td class="num">約 420</td><td>促銷反應、店舖周邊、競品、Campaign</td><td><span class="pill p2">Plan 2</span></td></tr>
-    <tr><td>金融 / 保險</td><td class="num">9%</td><td class="num">約 315</td><td>風評、炎上、合規、APPI</td><td><span class="pill p1">P1</span>+<span class="pill p3">P3</span></td></tr>
-    <tr><td>製藥 / 醫療 / 健康</td><td class="num">7%</td><td class="num">約 245</td><td>副作用訊號、誤傳、風險告警</td><td><span class="pill p1">P1</span></td></tr>
-    <tr><td>娛樂 / 傳媒 / 遊戲</td><td class="num">10%</td><td class="num">約 350</td><td>話題擴散、IP 聲量、跨國</td><td><span class="pill p2">P2</span>+<span class="pill p3">P3</span></td></tr>
-    <tr><td>政府 / 公益 / 自治體</td><td class="num">5%</td><td class="num">約 175</td><td>風評、災害、政策反應</td><td><span class="pill p1">Plan 1</span></td></tr>
-    <tr><td>代理商 / 顧問（通路 + 自用）</td><td class="num">19%</td><td class="num">約 665</td><td>客戶代操、報告代做、多品牌</td><td>通路 + 全方案</td></tr>
-  </tbody>
-</table>
-<p class="note">※ 比例依 NTT 2023 調查 + 日經廣告白皮書產業類別分佈推估，代理商與品牌有部分重疊。若只取「品牌 logo」，核心打擊池約 2,800 家。</p>
+<!-- ==================== 3 定價 ==================== -->
+<h2 id="pricing"><span class="num">03</span>定價邏輯：關鍵字詞組 + 帳號</h2>
 
-<!-- ==================== 3 定價策略 ==================== -->
-<h2 id="pricing"><span class="num">03</span>Pandora 定價邏輯：關鍵字詞組 + 帳號</h2>
-
-<p>Pandora 的核心計價單位是<strong>「關鍵字詞組（キーワードグループ）」</strong>與<strong>「使用者帳號（ユーザー）」</strong>。這個模組化邏輯在日本剛好可以直接對齊 Buzz Finder、Quid Monitor 的計價方式，但更清楚可預測。</p>
-
-<h3>3.1 基本公式</h3>
 <div class="formula">
-月費 = 基礎平台費 (Platform Fee)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;+ 關鍵字詞組數 × 詞組單價<br>
-&nbsp;&nbsp;&nbsp;&nbsp;+ 使用者帳號數 × 帳號單價<br>
-&nbsp;&nbsp;&nbsp;&nbsp;+ 選配模組（VOC / 競品比較 / API / BI / Managed）<br>
-＋ 初期費用 (Setup Fee, 一次性)
+月費 = 基礎平台費 + 關鍵字詞組數 × 詞組單價 + 帳號數 × 帳號單價 + 選配模組<br>
+＋ 初期費用（Setup Fee，一次性）
 </div>
+<p class="note">「關鍵字詞組」= 一個品牌 / 商品 / 競品 / 議題的監測單元（含同義詞、typo、布林邏輯）。客戶感知直覺：「每多一個品牌就多一組」。</p>
 
-<p class="note">「關鍵字詞組」= 一個品牌 / 商品 / 競品 / 議題的監測單元，通常含主詞、同義詞、typo、排除字、布林邏輯的一整組 query。客戶的感知是「每多一個品牌 / 商品就多一組」，非常直覺好預算化。</p>
-
-<h3>3.2 三階方案的模組化拆解</h3>
+<h3>3.1 三階方案模組化</h3>
 <table>
   <thead>
     <tr><th>項目</th><th><span class="pill p1">Plan 1 Monitor</span></th><th><span class="pill p2">Plan 2 Insight</span></th><th><span class="pill p3">Plan 3 Enterprise</span></th></tr>
   </thead>
   <tbody>
     <tr><td>基礎平台費 / 月</td><td class="num">50,000 円</td><td class="num">100,000 円</td><td class="num">300,000 円〜</td></tr>
-    <tr><td>包含關鍵字詞組數</td><td class="num">3 組</td><td class="num">10 組</td><td class="num">30 組〜</td></tr>
-    <tr><td>追加詞組單價 / 月</td><td class="num">10,000 円 / 組</td><td class="num">8,000 円 / 組</td><td class="num">5,000 円 / 組</td></tr>
-    <tr><td>包含帳號數</td><td class="num">2 名</td><td class="num">5 名</td><td class="num">無上限（內含 15）</td></tr>
-    <tr><td>追加帳號單價 / 月</td><td class="num">4,000 円 / 名</td><td class="num">3,500 円 / 名</td><td class="num">2,500 円 / 名</td></tr>
-    <tr><td>即時告警 / 日報</td><td>✓</td><td>✓</td><td>✓ + 24x365 Managed</td></tr>
-    <tr><td>VOC 洞察 / 競品比較</td><td>—</td><td>✓</td><td>✓</td></tr>
-    <tr><td>AI 問答 / 地區分析</td><td>—</td><td>✓</td><td>✓</td></tr>
-    <tr><td>Data Uploader / BI / API</td><td>—</td><td>加購 50,000 円 / 月</td><td>✓</td></tr>
-    <tr><td>SSO / 多 Workspace</td><td>—</td><td>—</td><td>✓</td></tr>
-    <tr style="background: rgba(77,212,172,0.06);"><td><strong>月費實際帶</strong></td><td class="num"><strong>88,000–120,000 円</strong></td><td class="num"><strong>200,000–350,000 円</strong></td><td class="num"><strong>600,000–1,500,000 円</strong></td></tr>
-    <tr><td>初期費用</td><td class="num">0–50,000 円</td><td class="num">100,000 円</td><td class="num">300,000 円〜</td></tr>
-    <tr><td>最短合約</td><td>1 / 3 個月彈性</td><td>6 個月</td><td>12 個月</td></tr>
-    <tr><td>年 ACV（中位）</td><td class="num">約 1,250,000 円</td><td class="num">約 3,400,000 円</td><td class="num">約 10,800,000 円</td></tr>
+    <tr><td>含詞組數</td><td class="num">3 組</td><td class="num">10 組</td><td class="num">30 組〜</td></tr>
+    <tr><td>追加詞組 / 月</td><td class="num">10,000 円</td><td class="num">8,000 円</td><td class="num">5,000 円</td></tr>
+    <tr><td>含帳號數</td><td class="num">2 名</td><td class="num">5 名</td><td class="num">內含 15（無上限）</td></tr>
+    <tr><td>追加帳號 / 月</td><td class="num">4,000 円</td><td class="num">3,500 円</td><td class="num">2,500 円</td></tr>
+    <tr><td>VOC / 競品 / AI 問答</td><td>—</td><td>✓ 原生內含</td><td>✓ 原生內含</td></tr>
+    <tr><td>BI / API</td><td>—</td><td>加購 50,000 円</td><td>✓</td></tr>
+    <tr><td>Managed 24×365</td><td>—</td><td>—</td><td>加購 200,000 円</td></tr>
+    <tr style="background:rgba(77,212,172,0.06);"><td><strong>月費實際帶</strong></td><td class="num"><strong>88k–120k 円</strong></td><td class="num"><strong>200k–350k 円</strong></td><td class="num"><strong>600k–1,500k 円</strong></td></tr>
+    <tr><td>初期費用</td><td class="num">0–50k 円</td><td class="num">100k 円</td><td class="num">300k 円〜</td></tr>
+    <tr><td>最短合約</td><td>1 / 3 個月</td><td>6 個月</td><td>12 個月</td></tr>
+    <tr><td>年 ACV（中位）</td><td class="num">¥1.25M</td><td class="num">¥3.4M</td><td class="num">¥10.8M</td></tr>
   </tbody>
 </table>
 
-<h3>3.3 範例組合（How it stacks up）</h3>
-<div class="grid grid-3">
-  <div class="card">
-    <div style="color:var(--accent-3);font-weight:600;">Plan 1 標準組合</div>
-    <p style="color:var(--text-dim);margin:8px 0;font-size:13px;">單品牌 / PR 風險監測</p>
-    <table style="font-size:13px;">
-      <tr><td>基礎費</td><td class="num">50,000</td></tr>
-      <tr><td>詞組 3 × 10,000</td><td class="num">30,000</td></tr>
-      <tr><td>帳號 2 × 4,000</td><td class="num">8,000</td></tr>
-      <tr style="background:rgba(107,164,255,0.08);"><td><strong>月費</strong></td><td class="num"><strong>88,000 円</strong></td></tr>
-    </table>
-  </div>
-  <div class="card">
-    <div style="color:var(--accent-2);font-weight:600;">Plan 2 標準組合</div>
-    <p style="color:var(--text-dim);margin:8px 0;font-size:13px;">3 品牌 + 5 競品比較</p>
-    <table style="font-size:13px;">
-      <tr><td>基礎費</td><td class="num">100,000</td></tr>
-      <tr><td>詞組 10（含）+ 5 × 8,000</td><td class="num">40,000</td></tr>
-      <tr><td>帳號 5（含）+ 3 × 3,500</td><td class="num">10,500</td></tr>
-      <tr><td>BI 串接加購</td><td class="num">50,000</td></tr>
-      <tr style="background:rgba(77,212,172,0.08);"><td><strong>月費</strong></td><td class="num"><strong>200,500 円</strong></td></tr>
-    </table>
-  </div>
-  <div class="card">
-    <div style="color:var(--warn);font-weight:600;">Plan 3 標準組合</div>
-    <p style="color:var(--text-dim);margin:8px 0;font-size:13px;">多品牌 + 海外監測</p>
-    <table style="font-size:13px;">
-      <tr><td>基礎費</td><td class="num">300,000</td></tr>
-      <tr><td>詞組 30（含）+ 20 × 5,000</td><td class="num">100,000</td></tr>
-      <tr><td>帳號 15（含）+ 10 × 2,500</td><td class="num">25,000</td></tr>
-      <tr><td>Managed 24x365</td><td class="num">200,000</td></tr>
-      <tr style="background:rgba(255,184,77,0.08);"><td><strong>月費</strong></td><td class="num"><strong>625,000 円</strong></td></tr>
-    </table>
-  </div>
-</div>
-
 <div class="callout">
-  <div class="title">為什麼這個計價結構適合日本市場</div>
+  <div class="title">為什麼這個結構適合日本</div>
   <ul class="clean" style="margin-bottom:0;">
-    <li>日本採購方習慣「逐項報價 / 見積書」：詞組、帳號、模組拆開明列，報價透明、利於過內部稟議。</li>
-    <li>對標 Buzz Finder 的「轉送數量」計價，Pandora 的「詞組」更貼近客戶業務語言（品牌數＝詞組數）。</li>
-    <li>帳號分層定價讓 <span class="pill p2">Plan 2</span> → <span class="pill p3">Plan 3</span> 自然升級：人數一多，Plan 3 的 2,500 円/名比 Plan 2 的 3,500 円/名更划算。</li>
-    <li>初期費用（Setup Fee）是日本 SaaS 的常見錨點，利於前期 Onboarding 收費 cover 成本。</li>
+    <li><strong>見積書文化友善</strong>：詞組 / 帳號 / 模組全明碼，利於過內部稟議。</li>
+    <li><strong>客戶語言對齊</strong>：「品牌數＝詞組數」比 Buzz Finder 的「轉送量」更可預測。</li>
+    <li><strong>自然升級路徑</strong>：帳號從 Plan 2 ¥3,500/名 降到 Plan 3 ¥2,500/名，人多自動划算。</li>
   </ul>
 </div>
 
-<!-- ==================== 4 對標市場 ==================== -->
-<h2 id="benchmark"><span class="num">04</span>對標市場可以怎麼做</h2>
+<!-- ==================== 4 對標 ==================== -->
+<h2 id="benchmark"><span class="num">04</span>對標市場策略</h2>
 
 <table>
-  <thead><tr><th>對標對象</th><th>計價方式</th><th>典型價格</th><th>Pandora 對位切法</th></tr></thead>
+  <thead><tr><th>對標</th><th>典型價格</th><th>Pandora 對位切法</th></tr></thead>
   <tbody>
-    <tr>
-      <td><strong>Buzz Finder (NTT)</strong></td>
-      <td>月轉送量 + 追加數量</td>
-      <td>88,000 / 176,000 / 220,000 円</td>
-      <td><span class="pill p1">Plan 1</span> 同價帶進場，避免「貴一截」。主打「AI 洞察 + 自動報告 = 多給的價值」。</td>
-    </tr>
-    <tr>
-      <td><strong>Social Insight (User Local)</strong></td>
-      <td>帳號無上限、統包</td>
-      <td>非公開（月 15–40 萬円）</td>
-      <td>避開 SNS 運營正面戰；用 <span class="pill p2">Plan 2</span> 把「風險 + 洞察」區隔定位。</td>
-    </tr>
-    <tr>
-      <td><strong>Quid Monitor (TDSE)</strong></td>
-      <td>完全客製、年約</td>
-      <td>月 50–150 萬円</td>
-      <td><span class="pill p3">Plan 3</span> 以「具體起價 60 萬円」做信任錨點，反客製的黑箱。</td>
-    </tr>
-    <tr>
-      <td><strong>Meltwater</strong></td>
-      <td>年約、PR+Social 綁售</td>
-      <td>年 400–1,200 萬円</td>
-      <td>不包 PR Wire、主打「數據深度 + 在地 NLP」，年約降到 300 萬円起。</td>
-    </tr>
-    <tr>
-      <td><strong>Brandwatch</strong></td>
-      <td>年約、海外主導</td>
-      <td>年 600 萬円起</td>
-      <td>用「日文 UI / 在地支援」當唯一差異化武器。</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="grid grid-2">
-  <div class="callout">
-    <div class="title">進場打法（對標層級）</div>
-    <ul class="clean" style="margin-bottom:0;">
-      <li><strong>Plan 1：同價對撞 Buzz Finder</strong>，但是贈送「月報 AI 摘要」當差異 hook。</li>
-      <li><strong>Plan 2：刻意貴 Buzz Finder Advanced 10%</strong>，差價打在 VOC + 競品 + Campaign 分析。</li>
-      <li><strong>Plan 3：公開起價 60 萬円</strong>，讓客戶不必先走詢價再被勸退，壓制 Quid / Meltwater 的黑箱。</li>
-    </ul>
-  </div>
-  <div class="callout warn">
-    <div class="title">不打的戰線</div>
-    <ul class="clean" style="margin-bottom:0;">
-      <li>不正面對打 Social Insight 的「發文排程 / CRM」。</li>
-      <li>不做年約綁售（Plan 1 保 1–3 個月彈性 → 進場阻力最小）。</li>
-      <li>不先打多國；日本在地化深耕 12 個月再說。</li>
-    </ul>
-  </div>
-</div>
-
-<h3>4.1 「關鍵字詞組 + 帳號」計價 × 五家對手對照</h3>
-<p>把 Pandora 的四件式定價公式（<strong>Platform Fee + 詞組 × 單價 + 帳號 × 單價 + 模組</strong>）拆開，逐一對應每家對手的計價邏輯。可以直接看出 Pandora 在每個欄位都有打法。</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>計價維度</th>
-      <th>Buzz Finder</th>
-      <th>Social Insight</th>
-      <th>Quid Monitor</th>
-      <th>Meltwater</th>
-      <th>Brandwatch</th>
-      <th style="color:var(--accent-2);">Pandora 對位</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>基礎平台費</strong></td>
-      <td>月 88,000 円</td>
-      <td>統包（非公開）</td>
-      <td>客製</td>
-      <td>年約客製</td>
-      <td>年約客製</td>
-      <td style="color:var(--accent-2);"><strong>公開 5 / 10 / 30 萬円</strong>階梯</td>
-    </tr>
-    <tr>
-      <td><strong>關鍵字 / Query 計價</strong></td>
-      <td>轉送數量（則數）</td>
-      <td>無細分</td>
-      <td>依 Query / Topic 數</td>
-      <td>依 Query / Keyword</td>
-      <td>依 Query 與對話量</td>
-      <td style="color:var(--accent-2);"><strong>「詞組」= 1 品牌</strong>，客戶語言直接對齊</td>
-    </tr>
-    <tr>
-      <td><strong>追加詞組單價</strong></td>
-      <td>轉送追加費（變動）</td>
-      <td>—</td>
-      <td>客製</td>
-      <td>客製</td>
-      <td>客製</td>
-      <td style="color:var(--accent-2);">明碼 5,000 / 8,000 / 10,000 円</td>
-    </tr>
-    <tr>
-      <td><strong>使用者帳號</strong></td>
-      <td>含少量</td>
-      <td>統包無上限</td>
-      <td>Seat 客製</td>
-      <td>Seat 客製</td>
-      <td>Seat 客製</td>
-      <td style="color:var(--accent-2);">明碼 2,500 / 3,500 / 4,000 円</td>
-    </tr>
-    <tr>
-      <td><strong>AI / VOC 模組</strong></td>
-      <td>未主打</td>
-      <td>有但非深分析</td>
-      <td>GenAI 需加購</td>
-      <td>GenAI Lens 加購</td>
-      <td>Research Suite 加購</td>
-      <td style="color:var(--accent-2);"><strong>P2 以上原生內含</strong>（差異化關鍵）</td>
-    </tr>
-    <tr>
-      <td><strong>BI / API</strong></td>
-      <td>△</td>
-      <td>△</td>
-      <td>✓（強項）</td>
-      <td>✓</td>
-      <td>✓</td>
-      <td style="color:var(--accent-2);">P2 加購 ¥50k / P3 內含</td>
-    </tr>
-    <tr>
-      <td><strong>Managed 24×365</strong></td>
-      <td>220,000 円/月（明示）</td>
-      <td>△</td>
-      <td>○</td>
-      <td>✓（綁售）</td>
-      <td>○</td>
-      <td style="color:var(--accent-2);">P3 ¥200k/月加購</td>
-    </tr>
-    <tr>
-      <td><strong>初期費用</strong></td>
-      <td>Advanced 11 萬円起</td>
-      <td>—</td>
-      <td>客製</td>
-      <td>客製</td>
-      <td>客製</td>
-      <td style="color:var(--accent-2);">0 / 10 / 30 萬円 明碼</td>
-    </tr>
-    <tr>
-      <td><strong>合約期</strong></td>
-      <td>月約</td>
-      <td>年約居多</td>
-      <td>年約</td>
-      <td>12 個月為主</td>
-      <td>年約</td>
-      <td style="color:var(--accent-2);">P1 月 / P2 半年 / P3 年</td>
-    </tr>
-    <tr style="background:rgba(77,212,172,0.06);">
-      <td><strong>透明度</strong></td>
-      <td>中（月費公開）</td>
-      <td>低</td>
-      <td>低</td>
-      <td>低</td>
-      <td>低</td>
-      <td style="color:var(--accent-2);"><strong>最高（公式化 + 明碼）</strong></td>
-    </tr>
+    <tr><td><strong>Buzz Finder</strong>（NTT / 本地入門王）</td><td>月 88k / 176k / 220k 円</td><td><span class="pill p1">P1</span> 同價進場，差異是 AI 月報 + 情緒細分</td></tr>
+    <tr><td><strong>Social Insight</strong>（User Local / 運營型）</td><td>月 15–40 萬円</td><td>區隔：不做發文、用 <span class="pill p2">P2</span> 做 VOC 洞察</td></tr>
+    <tr><td><strong>Quid Monitor</strong>（TDSE / 深分析）</td><td>月 50–150 萬円</td><td><span class="pill p3">P3</span> 公開起價 60 萬円，反客製黑箱</td></tr>
+    <tr><td><strong>Meltwater</strong>（PR 綁售）</td><td>年 400–1,200 萬円</td><td>不包 PR Wire，年約 300 萬円起</td></tr>
+    <tr><td><strong>Brandwatch</strong>（海外）</td><td>年 600 萬円起</td><td>日文 UI + 在地支援 + 5ch / Review 差異化</td></tr>
   </tbody>
 </table>
 
 <div class="callout">
-  <div class="title">對標市場的 3 個核心打法</div>
-  <ol style="color:var(--text-dim);">
-    <li><strong>用「公式」打「黑箱」</strong>：Quid / Meltwater / Brandwatch 的共同弱點是「見積不出來、採購稟議通不過」。Pandora 把詞組、帳號、模組全部明碼，日本客戶拿到報價單就能直接跑決裁 flow。</li>
-    <li><strong>用「詞組」打「轉送」</strong>：Buzz Finder 計價邏輯是「轉送量」，客戶很難預測月底帳單。Pandora 的「品牌數 = 詞組數」是可控的採購單位，IT / 行銷都看得懂。</li>
-    <li><strong>用「模組內含」打「加購」</strong>：Meltwater GenAI Lens、Quid Generative 都是另外加購，Pandora 在 Plan 2 原生內含 AI 問答 + VOC 洞察，同價不同值。</li>
+  <div class="title">三個核心打法</div>
+  <ol style="color:var(--text-dim);margin-bottom:0;">
+    <li><strong>用「公式」打「黑箱」</strong>：Quid / Meltwater / Brandwatch 見積不透明，Pandora 明碼報價直接過稟議。</li>
+    <li><strong>用「詞組」打「轉送量」</strong>：Buzz Finder 帳單難預測，「品牌數＝詞組數」是可控採購單位。</li>
+    <li><strong>用「模組內含」打「加購」</strong>：Meltwater GenAI、Quid Generative 要加購，Pandora P2 原生內含。</li>
   </ol>
 </div>
 
-<h3>4.2 每家對手的拆解打法（Playbook）</h3>
-<div class="grid grid-2">
-  <div class="card">
-    <div style="color:var(--accent-3);font-weight:600;">vs Buzz Finder（本地入門王）</div>
-    <ul class="clean" style="font-size:13px;">
-      <li>同價 88,000 円月約進場（P1）</li>
-      <li>差異：AI 月報 / 情緒細分 / 主題萃取</li>
-      <li>話術：「同價格、自動做完月報」</li>
-      <li>通路：與公關公司合作替換</li>
-    </ul>
-  </div>
-  <div class="card">
-    <div style="color:var(--accent-2);font-weight:600;">vs Social Insight（運營型）</div>
-    <ul class="clean" style="font-size:13px;">
-      <li>明確區隔：不做發文、只做洞察</li>
-      <li>P2 補足 VOC / 競品深度</li>
-      <li>話術：「運營留 Social Insight、分析換 Pandora」</li>
-      <li>可共存，甚至透過 API 餵分析</li>
-    </ul>
-  </div>
-  <div class="card">
-    <div style="color:var(--warn);font-weight:600;">vs Quid Monitor（深分析）</div>
-    <ul class="clean" style="font-size:13px;">
-      <li>P3 起價 60 萬円 vs Quid 100 萬円</li>
-      <li>差異：UI 更友善、AI 內含不加購</li>
-      <li>話術：「深度 80%，價格 50%」</li>
-      <li>攻點：中型品牌 Quid 用不完的場景</li>
-    </ul>
-  </div>
-  <div class="card">
-    <div style="color:var(--accent-3);font-weight:600;">vs Meltwater / Brandwatch（國際）</div>
-    <ul class="clean" style="font-size:13px;">
-      <li>不跟 PR Wire 比、聚焦 social</li>
-      <li>強化日文 NLP + 5ch / Review 在地平台</li>
-      <li>年約 300 萬円起 vs 對手 600 萬円+</li>
-      <li>話術：「日本語精度 + 合約彈性」</li>
-    </ul>
-  </div>
-</div>
-
-<!-- ==================== 5 潛在成本 ==================== -->
-<h2 id="cost"><span class="num">05</span>潛在成本（重心：一年內鋪滿全渠道爬蟲）</h2>
-
-<p>成本模型把絕大多數預算投在 <strong>Y1 全渠道爬蟲一次鋪完</strong>，其他（銷售、行銷、合規）維持最精簡。Y2、Y3 以 <strong>維運 + 擴展</strong> 為主。全部以新台幣（TWD）標示，匯率採 <strong>1 TWD ≒ 4.7 JPY</strong>。</p>
+<!-- ==================== 5 成本 ==================== -->
+<h2 id="cost"><span class="num">05</span>潛在成本（兩階段上市，TWD）</h2>
+<p>成本以新台幣標示，匯率 <strong>1 TWD ≒ 4.7 JPY</strong>。雲端採 <strong>GCP asia-northeast1（東京）</strong>符合 APPI。</p>
 
 <div class="callout">
-  <div class="title">Y1 分兩階段：先日文版 MVP、再擴日本在地渠道</div>
+  <div class="title">Y1 分兩階段：先日文版、再日本渠道</div>
   <ul class="clean" style="margin-bottom:0;">
-    <li><strong>階段 1｜日文版（Y1 Q1–Q2，約 3 個月）</strong>：日文 UI 全面本地化、上 X（雙軌）+ 基礎日本新聞 RSS，即可進入市場賣 <span class="pill p1">Plan 1</span> 風險監測。不動日本在地渠道。</li>
-    <li><strong>階段 2｜日本在地渠道（Y1 Q3 起，約 6 個月）</strong>：再投入 1 名 RD × 6 個月建 Threads / Instagram / 5ch / Review / 新聞深化，解鎖 <span class="pill p2">Plan 2</span> VOC + 競品洞察。</li>
-    <li>YouTube / TikTok 延至 Y2 視客戶需求再啟動。</li>
+    <li><strong>Phase 1｜日文版 MVP（Y1 Q1–Q2）</strong>：日文 UI 本地化 + X（API + 自寫雙軌）+ 基礎日本新聞 RSS → 可賣 <span class="pill p1">Plan 1</span>。本地化由 3 FTE 平台團隊消化。</li>
+    <li><strong>Phase 2｜日本在地渠道（Y1 Q3 起）</strong>：1 RD × 6 個月建 Threads / IG / 5ch / Review / 新聞擴充 → 解鎖 <span class="pill p2">Plan 2</span>。YouTube / TikTok 延至 Y2。</li>
   </ul>
 </div>
 
-<div class="callout warn">
-  <div class="title">核心決策：X 採「X API + 自寫爬蟲」雙軌評估</div>
-  <ul class="clean" style="margin-bottom:0;">
-    <li><strong>A 軌｜X API（Pro / Enterprise tier）</strong>：合法、穩定、即時；缺點是授權費高、條款隨 X 公司政策變動。</li>
-    <li><strong>B 軌｜自寫爬蟲</strong>：成本可控、規格可自訂；缺點是須對抗反爬 / 帳號風控、法務風險較高。</li>
-    <li><strong>Y1 前 6 個月雙軌並行</strong>，比較「資料完整度、延遲、單則成本、法務風險」，Y1 H2 決定主軌（或維持雙軌 fallback）。Y1 預算：API 約 <strong>NT$2.5M</strong>、自寫爬蟲 dev 約 <strong>NT$1.5M</strong>（含 1 名工程師 6 個月、代理 IP、反爬工具、法務諮詢）。</li>
-  </ul>
-</div>
-
-<h3>5.1 兩階段上市計畫</h3>
-
-<h4 style="color:var(--accent-3);margin-top:24px;">Phase 1｜日文版 MVP（Y1 Q1–Q2，約 3 個月）</h4>
-<p>目標：<strong>日文 UI 上線、可賣 Plan 1 風險監測</strong>。不投入日本在地渠道。現階段支援的資料源沿用全球共通的 X + 基礎日本新聞 RSS。</p>
+<h3>5.1 Y1 技術 / 爬蟲成本明細</h3>
 <table>
-  <thead>
-    <tr><th>項目</th><th>內容</th><th class="num">Y1 支出（TWD）</th></tr>
-  </thead>
+  <thead><tr><th>項目</th><th class="num">Y1 成本</th><th>說明</th></tr></thead>
   <tbody>
-    <tr><td>日文 UI / Onboarding / 文案本地化</td><td>全 UI、tooltip、Email 模板、客服素材、銷售 deck</td><td class="num">由 3 FTE 平台團隊消化</td></tr>
-    <tr><td>X 資料（<span class="pill p1">API + 自寫雙軌</span>）</td><td>X API Pro 年費 NT$2.5M + 工具 / 代理 IP NT$0.2M</td><td class="num">NT$2.7M</td></tr>
-    <tr><td>基礎日本新聞 RSS（30 站）</td><td>日經、Yahoo! Japan 等主要媒體；Scrapy 框架</td><td class="num">含於 3 FTE 人力</td></tr>
-    <tr style="background:rgba(107,164,255,0.08);"><td colspan="2"><strong>Phase 1 額外支出合計</strong></td><td class="num"><strong>NT$2.7M</strong></td></tr>
-  </tbody>
-</table>
-<p class="note">※ Phase 1 不新增 RD，本地化與新聞 RSS 由 3 FTE 平台團隊在 Y1 上半年內消化。</p>
-
-<h4 style="color:var(--accent-2);margin-top:32px;">Phase 2｜日本在地渠道（Y1 Q3 起，約 6 個月）</h4>
-<p>目標：<strong>解鎖 Plan 2 的 VOC、競品、Campaign 分析</strong>。投入 1 名專職 RD 建日本在地爬蟲。</p>
-<table>
-  <thead>
-    <tr><th>渠道</th><th>取得方式</th><th>啟動時點</th><th>主要挑戰</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Threads</td><td>自寫爬蟲（Meta 官方 API 功能有限）</td><td>Y1 Q3</td><td>headless 爬蟲 + 反爬對抗</td></tr>
-    <tr><td>Instagram（Business）</td><td>Meta Graph API + 自寫爬蟲補公開內容</td><td>Y1 Q3</td><td>API 對 hashtag 有限制、需補公開貼文</td></tr>
-    <tr><td><strong>5ch / 掲示板</strong></td><td>自寫爬蟲</td><td>Y1 Q4</td><td>反爬強、需專人維運</td></tr>
-    <tr><td>Review 站（@cosme / 価格.com / 食べログ）</td><td>自寫爬蟲</td><td>Y1 Q4</td><td>各站 TOS 需法務 review</td></tr>
-    <tr><td>日本新聞擴充（30 → 80 站）</td><td>RSS + 自寫爬蟲</td><td>Y1 Q3</td><td>涵蓋地方媒體、專業誌</td></tr>
-    <tr><td>YouTube / TikTok</td><td>官方 API + Partnership</td><td>延至 Y2</td><td>先觀察客戶訴求</td></tr>
+    <tr style="background:rgba(107,164,255,0.06);"><td colspan="3" style="color:var(--accent-3);font-weight:600;">Phase 1｜日文版 MVP（Y1 Q1–Q2）　小計 NT$2.7M</td></tr>
+    <tr><td>X API Pro（A 軌）</td><td class="num">NT$2.5M</td><td>$5k USD/月 × 12</td></tr>
+    <tr><td>X 自寫爬蟲工具 / 代理 IP（B 軌）</td><td class="num">NT$0.2M</td><td>Y1 雙軌評估，H2 決定主軌</td></tr>
+    <tr style="background:rgba(77,212,172,0.06);"><td colspan="3" style="color:var(--accent-2);font-weight:600;">Phase 2｜日本在地渠道（Y1 Q3–Q4）　小計 NT$0.9M</td></tr>
+    <tr><td>爬蟲 RD（1 × 6 月 × NT$10 萬）</td><td class="num">NT$0.6M</td><td>Threads / IG / 5ch / Review / 新聞共用</td></tr>
+    <tr><td>代理 IP / 反爬工具 / 法務</td><td class="num">NT$0.3M</td><td>含 TOS 與 APPI 合規審查</td></tr>
+    <tr style="background:rgba(255,255,255,0.03);"><td colspan="3" style="color:var(--text-dim);font-weight:600;">共用基礎建設（整年）　小計 NT$8.9M</td></tr>
+    <tr><td>後端 / 資料工程師 × 3 FTE</td><td class="num">NT$6.9M</td><td>平台、管線、日文 UI 本地化</td></tr>
+    <tr><td>AI / LLM API</td><td class="num">NT$1.2M</td><td>摘要、問答、月報</td></tr>
+    <tr><td>GCP（東京 Region）</td><td class="num">NT$0.8M</td><td>BigQuery / Pub/Sub / GKE</td></tr>
+    <tr style="background:rgba(77,212,172,0.1);"><td><strong>Y1 技術合計</strong></td><td class="num"><strong>NT$12.5M</strong></td><td>Phase 1 + Phase 2 + 基礎建設</td></tr>
   </tbody>
 </table>
 
-<table>
-  <thead><tr><th>Phase 2 成本項</th><th class="num">Y1 支出（TWD）</th><th>說明</th></tr></thead>
-  <tbody>
-    <tr><td><strong>爬蟲開發人力</strong>（1 RD × 6 月 × NT$10 萬）</td><td class="num"><strong>NT$0.6M</strong></td><td>全日本在地渠道共用同一位 RD，共用 Scrapy / Playwright 框架</td></tr>
-    <tr><td>代理 IP / 反爬工具 / 法務諮詢</td><td class="num">NT$0.3M</td><td>跨渠道共用，含 TOS 與 APPI 合規審查</td></tr>
-    <tr style="background:rgba(77,212,172,0.08);"><td><strong>Phase 2 額外支出合計</strong></td><td class="num"><strong>NT$0.9M</strong></td><td></td></tr>
-  </tbody>
-</table>
-
-<div class="callout warn">
-  <div class="title">兩階段 Y1 一次性開發合計</div>
-  <strong>Phase 1（NT$2.7M）+ Phase 2（NT$0.9M）= NT$3.6M</strong>，較先前估「全渠道一次鋪完 NT$7.7M」精簡過半。階段化還有一個好處：Phase 1 在 Y1 Q2 就能開始收 Plan 1 客戶，Phase 2 的投入可以用 Phase 1 的現金流 cover 一部分。
-</div>
-
-<h3>5.2 Year 1 技術 / 爬蟲成本明細（TWD）</h3>
-<table>
-  <thead><tr><th>項目</th><th>內容</th><th class="num">年成本（TWD）</th><th>備註</th></tr></thead>
-  <tbody>
-    <tr style="background:rgba(107,164,255,0.04);"><td colspan="4" style="color:var(--accent-3);font-weight:600;">Phase 1｜日文版（Y1 Q1–Q2）</td></tr>
-    <tr><td><strong>X API（A 軌）</strong></td><td>X API Pro tier 起步，視量再升 Enterprise 部分 firehose</td><td class="num">NT$2.5M</td><td>$5k USD/月 × 12 ≒ NT$2.5M</td></tr>
-    <tr><td>Phase 1 工具 / 代理 IP</td><td>X 自寫爬蟲（B 軌）所需代理、工具</td><td class="num">NT$0.2M</td><td>含於 Phase 1</td></tr>
-    <tr style="background:rgba(77,212,172,0.04);"><td colspan="4" style="color:var(--accent-2);font-weight:600;">Phase 2｜日本在地渠道（Y1 Q3–Q4）</td></tr>
-    <tr><td><strong>日本渠道爬蟲 RD</strong></td><td>1 名 RD × 6 個月 × NT$10 萬，Threads / IG / 5ch / Review / 新聞擴充共用</td><td class="num">NT$0.6M</td><td>一次性 MVP 框架，之後由維運 FTE 接手</td></tr>
-    <tr><td>Phase 2 工具 / 法務</td><td>代理 IP、反爬工具、TOS 與 APPI 合規審查</td><td class="num">NT$0.3M</td><td>含 Review 站法務諮詢</td></tr>
-    <tr style="background:rgba(255,255,255,0.02);"><td colspan="4" style="color:var(--text-dim);font-weight:600;">共用基礎建設（整年）</td></tr>
-    <tr><td>後端 / 資料工程師 × 3 FTE</td><td>平台、管線、去重、排程、告警、維運、日文 UI 本地化</td><td class="num">NT$6.9M</td><td>NT$2.3M × 3 名（年薪 + SG&amp;A）</td></tr>
-    <tr><td>AI / LLM API</td><td>摘要、問答、月報生成</td><td class="num">NT$1.2M</td><td>Y1 客戶量少、用量低</td></tr>
-    <tr><td><strong>GCP（asia-northeast1 / 東京 Region）</strong></td><td>BigQuery、Cloud Storage、Pub/Sub、GKE；APPI 合規資料落地</td><td class="num">NT$0.8M</td><td>~NT$67k/月，隨資料量線性成長</td></tr>
-    <tr style="background: rgba(77,212,172,0.08);"><td colspan="2"><strong>Y1 技術 / 爬蟲小計</strong></td><td class="num"><strong>NT$12.5M</strong></td><td>Phase 1 NT$2.7M + Phase 2 NT$0.9M + 基礎建設 NT$8.9M</td></tr>
-  </tbody>
-</table>
-<p class="note">※ 雲端全線使用 GCP asia-northeast1（東京）以符合 APPI 資料儲存地要求。Phase 2 的爬蟲 RD 獨立於 3 FTE 平台團隊之外，避免把一次性 dev 成本與持續維運成本混在一起。</p>
-
-<h3>5.3 其他成本（簡述）</h3>
-<ul class="clean">
-  <li><strong>銷售 / CS / 在地 PM（人事）</strong>：Y1 BD×1 + CS×1 + PM×1 共 <strong>NT$5.1M</strong>；Y2 擴到 4 人 <strong>NT$7.7M</strong>；Y3 擴到 6 人 <strong>NT$12.8M</strong>。</li>
-  <li><strong>行銷 / PR</strong>：Y1 <strong>NT$1.7M</strong>（展會 + Nikkei + Owned）、Y2 <strong>NT$2.6M</strong>、Y3 <strong>NT$3.8M</strong>。</li>
-  <li><strong>合規 / 法務</strong>：ISMS（ISO27001）+ APPI + 合同会社設立 Y1 一次性 <strong>NT$1.1M</strong>，Y2／Y3 年維 <strong>NT$0.9M／NT$1.3M</strong>。</li>
-  <li><strong>辦公室 / 差旅</strong>：東京 co-working，每年 <strong>NT$0.4–1.1M</strong>。</li>
-</ul>
-
-<h3>5.4 三年成本曲線（技術為主，TWD）</h3>
+<h3>5.2 三年成本曲線</h3>
 <div class="stacked-chart">
   <div class="stacked-col">
     <div class="total">NT$20.8M</div>
-    <div class="seg" style="height:125px; background:#4dd4ac;" title="Tech NT$12.5M"></div>
-    <div class="seg" style="height:51px; background:#6ba4ff;" title="Sales/CS NT$5.1M"></div>
-    <div class="seg" style="height:32px; background:#ffb84d;" title="Mkt/合規 NT$3.2M"></div>
+    <div class="seg" style="height:120px; background:#4dd4ac;"></div>
+    <div class="seg" style="height:50px; background:#6ba4ff;"></div>
+    <div class="seg" style="height:30px; background:#ffb84d;"></div>
     <div class="label">Year 1</div>
   </div>
   <div class="stacked-col">
     <div class="total">NT$33.6M</div>
-    <div class="seg" style="height:213px; background:#4dd4ac;" title="Tech NT$21.3M"></div>
-    <div class="seg" style="height:77px; background:#6ba4ff;" title="Sales/CS NT$7.7M"></div>
-    <div class="seg" style="height:47px; background:#ffb84d;" title="Mkt/合規 NT$4.7M"></div>
+    <div class="seg" style="height:200px; background:#4dd4ac;"></div>
+    <div class="seg" style="height:72px; background:#6ba4ff;"></div>
+    <div class="seg" style="height:44px; background:#ffb84d;"></div>
     <div class="label">Year 2</div>
   </div>
   <div class="stacked-col">
     <div class="total">NT$48.9M</div>
-    <div class="seg" style="height:260px; background:#4dd4ac;" title="Tech NT$28.7M"></div>
-    <div class="seg" style="height:128px; background:#6ba4ff;" title="Sales/CS NT$12.8M"></div>
-    <div class="seg" style="height:75px; background:#ffb84d;" title="Mkt/合規 NT$7.5M"></div>
+    <div class="seg" style="height:240px; background:#4dd4ac;"></div>
+    <div class="seg" style="height:120px; background:#6ba4ff;"></div>
+    <div class="seg" style="height:70px; background:#ffb84d;"></div>
     <div class="label">Year 3</div>
   </div>
 </div>
 <div class="legend">
-  <span><span class="dot" style="background:#4dd4ac;"></span>技術 / 爬蟲（核心投入）</span>
-  <span><span class="dot" style="background:#6ba4ff;"></span>銷售 / CS / 在地 PM</span>
-  <span><span class="dot" style="background:#ffb84d;"></span>行銷 + 合規 + 其他</span>
+  <span><span class="dot" style="background:#4dd4ac;"></span>技術 / 爬蟲</span>
+  <span><span class="dot" style="background:#6ba4ff;"></span>銷售 / CS</span>
+  <span><span class="dot" style="background:#ffb84d;"></span>行銷 + 合規</span>
 </div>
 
 <table>
-  <thead><tr><th>成本項</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th>主要成長動因</th></tr></thead>
+  <thead><tr><th>成本項</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th>成長動因</th></tr></thead>
   <tbody>
-    <tr style="background: rgba(77,212,172,0.08);">
-      <td><strong>技術 / 爬蟲（核心）</strong></td><td class="num"><strong>NT$12.5M</strong></td><td class="num"><strong>NT$21.3M</strong></td><td class="num"><strong>NT$28.7M</strong></td>
-      <td>Y1 兩階段：先日文版、再日本渠道；Y2 維運 + YouTube/TikTok；Y3 海外語系</td>
-    </tr>
-    <tr><td>　↳ X API（Phase 1 外購授權）</td><td class="num">NT$2.5M</td><td class="num">NT$3.0M</td><td class="num">NT$4.0M</td><td>隨客戶資料量逐年微升</td></tr>
-    <tr><td>　↳ Phase 1 工具 / 代理 IP</td><td class="num">NT$0.2M</td><td class="num">—</td><td class="num">—</td><td>X 自寫爬蟲 B 軌所需</td></tr>
-    <tr><td>　↳ Phase 2 爬蟲 RD（1 × 6 月 × 10 萬）</td><td class="num">NT$0.6M</td><td class="num">—</td><td class="num">—</td><td>僅 Y1 Q3–Q4，之後由維運 FTE 接手</td></tr>
-    <tr><td>　↳ Phase 2 工具 / 法務</td><td class="num">NT$0.3M</td><td class="num">NT$0.5M</td><td class="num">NT$0.7M</td><td>日本在地渠道持續維運成本</td></tr>
-    <tr><td>　↳ 其他渠道爬蟲維運</td><td class="num">—</td><td class="num">NT$2.5M</td><td class="num">NT$3.0M</td><td>Y2 起的延伸維運</td></tr>
-    <tr><td>　↳ 後端 / 資料工程師</td><td class="num">NT$6.9M</td><td class="num">NT$10.0M</td><td class="num">NT$13.0M</td><td>Y1 3 FTE → Y2 4 FTE → Y3 5 FTE（含日文 UI 本地化）</td></tr>
-    <tr><td>　↳ AI / LLM API</td><td class="num">NT$1.2M</td><td class="num">NT$3.8M</td><td class="num">NT$5.5M</td><td>隨客戶數成長</td></tr>
-    <tr><td>　↳ GCP（asia-northeast1）</td><td class="num">NT$0.8M</td><td class="num">NT$1.5M</td><td class="num">NT$2.5M</td><td>BigQuery / Pub/Sub / GKE 使用量</td></tr>
-    <tr><td>銷售 / CS / 在地 PM</td><td class="num">NT$5.1M</td><td class="num">NT$7.7M</td><td class="num">NT$12.8M</td><td>—（簡述）</td></tr>
-    <tr><td>行銷 + 合規 + 其他</td><td class="num">NT$3.2M</td><td class="num">NT$4.7M</td><td class="num">NT$7.5M</td><td>—（簡述）</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>合計</strong></td><td class="num"><strong>NT$20.8M</strong></td><td class="num"><strong>NT$33.6M</strong></td><td class="num"><strong>NT$48.9M</strong></td><td>對應日幣 ¥98M / ¥158M / ¥230M</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>技術 / 爬蟲</strong></td><td class="num"><strong>NT$12.5M</strong></td><td class="num"><strong>NT$21.3M</strong></td><td class="num"><strong>NT$28.7M</strong></td><td>Y2 加 YouTube/TikTok 維運；Y3 海外語系</td></tr>
+    <tr><td>銷售 / CS / 在地 PM</td><td class="num">NT$5.1M</td><td class="num">NT$7.7M</td><td class="num">NT$12.8M</td><td>Y1 3 人 → Y3 6 人</td></tr>
+    <tr><td>行銷 + 合規 + 其他</td><td class="num">NT$3.2M</td><td class="num">NT$4.7M</td><td class="num">NT$7.5M</td><td>含 ISMS / APPI / 合同会社</td></tr>
+    <tr style="background:rgba(255,107,107,0.08);"><td><strong>合計（TWD）</strong></td><td class="num"><strong>NT$20.8M</strong></td><td class="num"><strong>NT$33.6M</strong></td><td class="num"><strong>NT$48.9M</strong></td><td>對應日幣 ¥98M / ¥158M / ¥230M</td></tr>
   </tbody>
 </table>
 
-<div class="callout warn">
-  <div class="title">雙軌取捨的決策框架（Y1 H2 需做出決定）</div>
-  <ul class="clean" style="margin-bottom:0;">
-    <li><strong>選 A 軌 X API</strong>：若客戶對「資料合法性 / SLA / 即時告警延遲」要求高 → 即使貴，仍維持官方 API。</li>
-    <li><strong>選 B 軌 自寫爬蟲</strong>：若客戶價格敏感、且公開 Web 可覆蓋 80% 以上 use case → 改以自寫為主、API 降級為備援。</li>
-    <li><strong>維持雙軌</strong>：Plan 3 Enterprise 客戶走 A 軌（有 SLA）、Plan 1/2 走 B 軌（壓成本），架構同一管線、資料源可切換。</li>
-  </ul>
-</div>
+<!-- ==================== 6 收入 ==================== -->
+<h2 id="revenue"><span class="num">06</span>潛在收入：客戶漏斗 + ARR 模擬</h2>
 
-<!-- ==================== 6 潛在收入 ==================== -->
-<h2 id="revenue"><span class="num">06</span>潛在收入：三年客戶漏斗 + ARR 模擬</h2>
-
-<h3>6.1 客戶漏斗（Logo Count）</h3>
+<h3>6.1 客戶漏斗與 ARR</h3>
 <table>
-  <thead><tr><th>方案</th><th class="num">Y1 期末</th><th class="num">Y2 期末</th><th class="num">Y3 期末</th><th>假設</th></tr></thead>
+  <thead><tr><th>方案</th><th class="num">Y1 logo</th><th class="num">Y2 logo</th><th class="num">Y3 logo</th><th class="num">Y3 ARR</th></tr></thead>
   <tbody>
-    <tr><td><span class="pill p1">Plan 1 Monitor</span></td><td class="num">40</td><td class="num">100</td><td class="num">160</td><td>月新增 3→8→10；年流失 15%</td></tr>
-    <tr><td><span class="pill p2">Plan 2 Insight</span></td><td class="num">12</td><td class="num">45</td><td class="num">110</td><td>Plan 1→2 升級率 30%；直銷 5/月</td></tr>
-    <tr><td><span class="pill p3">Plan 3 Enterprise</span></td><td class="num">2</td><td class="num">8</td><td class="num">22</td><td>Plan 2→3 升級率 10%；顧問式</td></tr>
-    <tr style="background:rgba(77,212,172,0.08);"><td><strong>活躍 logo 合計</strong></td><td class="num"><strong>54</strong></td><td class="num"><strong>153</strong></td><td class="num"><strong>292</strong></td><td>Y3 市佔約 8–10%（SOM 3,000 基礎）</td></tr>
+    <tr><td><span class="pill p1">Plan 1</span> × ¥1.25M</td><td class="num">40</td><td class="num">100</td><td class="num">160</td><td class="num">¥200M</td></tr>
+    <tr><td><span class="pill p2">Plan 2</span> × ¥3.4M</td><td class="num">12</td><td class="num">45</td><td class="num">110</td><td class="num">¥374M</td></tr>
+    <tr><td><span class="pill p3">Plan 3</span> × ¥10.8M</td><td class="num">2</td><td class="num">8</td><td class="num">22</td><td class="num">¥238M</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>期末 ARR</strong></td><td class="num"><strong>¥112M</strong></td><td class="num"><strong>¥364M</strong></td><td class="num"><strong>¥812M</strong></td><td class="num"><strong>¥812M</strong></td></tr>
   </tbody>
 </table>
+<p class="note">※ 假設：月新增 Plan 1 3→10；Plan 1→2 升級 30%、Plan 2→3 升級 10%；年流失 15%。當年度認列營收 = 期初 ARR + 新增 ARR × 0.5。</p>
 
-<h3>6.2 年經常性收入（ARR）</h3>
-<table>
-  <thead><tr><th>方案 × ACV</th><th class="num">Y1 ARR</th><th class="num">Y2 ARR</th><th class="num">Y3 ARR</th></tr></thead>
-  <tbody>
-    <tr><td>Plan 1 × ¥1.25M/年</td><td class="num">50.0M</td><td class="num">125.0M</td><td class="num">200.0M</td></tr>
-    <tr><td>Plan 2 × ¥3.4M/年</td><td class="num">40.8M</td><td class="num">153.0M</td><td class="num">374.0M</td></tr>
-    <tr><td>Plan 3 × ¥10.8M/年</td><td class="num">21.6M</td><td class="num">86.4M</td><td class="num">237.6M</td></tr>
-    <tr style="background:rgba(77,212,172,0.08);"><td><strong>ARR 期末</strong></td><td class="num"><strong>112.4M</strong></td><td class="num"><strong>364.4M</strong></td><td class="num"><strong>811.6M</strong></td></tr>
-  </tbody>
-</table>
-
-<p class="note">※ ARR 為期末跑率。實際當年度認列營收（GAAP Revenue）約為 <strong>期初 ARR + 新增 ARR × 0.5</strong>（假設平均半年貢獻）。</p>
-
-<h3>6.3 實際認列營收 vs 成本 vs 損益</h3>
-<div class="stacked-chart">
-  <div class="stacked-col">
-    <div class="total" style="color:var(--accent);">-NT$7.8M</div>
-    <div class="seg" style="height:61px; background:#4dd4ac;" title="Revenue NT$13M"></div>
-    <div class="label">Year 1</div>
-  </div>
-  <div class="stacked-col">
-    <div class="total" style="color:var(--accent-2);">+NT$17.0M</div>
-    <div class="seg" style="height:128px; background:#4dd4ac;" title="Revenue NT$50.6M"></div>
-    <div class="label">Year 2</div>
-  </div>
-  <div class="stacked-col">
-    <div class="total" style="color:var(--accent-2);">+NT$76.2M</div>
-    <div class="seg" style="height:250px; background:#4dd4ac;" title="Revenue NT$125.1M"></div>
-    <div class="label">Year 3</div>
-  </div>
-</div>
-<div class="legend">
-  <span><span class="dot" style="background:#4dd4ac;"></span>當年度認列營收（Revenue）</span>
-  <span style="color:var(--accent);">※ 損益 = Revenue − 成本</span>
-</div>
-
+<h3>6.2 營收 vs 成本 vs 損益</h3>
 <table>
   <thead><tr><th>項目</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th class="num">三年累計</th></tr></thead>
   <tbody>
-    <tr><td>期末 ARR（JPY）</td><td class="num">¥112M</td><td class="num">¥364M</td><td class="num">¥812M</td><td class="num">—</td></tr>
-    <tr><td>當年度認列 Revenue（JPY）</td><td class="num">¥61M</td><td class="num">¥238M</td><td class="num">¥588M</td><td class="num">¥887M</td></tr>
-    <tr><td>當年度認列 Revenue（TWD）</td><td class="num">NT$13.0M</td><td class="num">NT$50.6M</td><td class="num">NT$125.1M</td><td class="num">NT$188.7M</td></tr>
+    <tr><td>認列 Revenue（JPY）</td><td class="num">¥61M</td><td class="num">¥238M</td><td class="num">¥588M</td><td class="num">¥887M</td></tr>
+    <tr><td>認列 Revenue（TWD）</td><td class="num">NT$13.0M</td><td class="num">NT$50.6M</td><td class="num">NT$125.1M</td><td class="num">NT$188.7M</td></tr>
     <tr><td>成本 OPEX（TWD）</td><td class="num">NT$20.8M</td><td class="num">NT$33.6M</td><td class="num">NT$48.9M</td><td class="num">NT$103.3M</td></tr>
     <tr style="background:rgba(255,107,107,0.08);"><td><strong>年度損益（TWD）</strong></td><td class="num" style="color:var(--accent);"><strong>-NT$7.8M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$17.0M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$76.2M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$85.4M</strong></td></tr>
     <tr><td>累計損益（TWD）</td><td class="num" style="color:var(--accent);">-NT$7.8M</td><td class="num">+NT$9.2M</td><td class="num" style="color:var(--accent-2);">+NT$85.4M</td><td class="num">—</td></tr>
@@ -762,89 +332,53 @@
 <div class="callout">
   <div class="title">關鍵財務結論</div>
   <ul class="clean" style="margin-bottom:0;">
-    <li><strong>Y1 虧損約 NT$7.8M</strong>（¥37M，上市投入期；Phase 1 日文版 + Phase 2 日本渠道分階段投入），需預備至少 <strong>NT$10M 現金緩衝</strong>。</li>
-    <li><strong>Y2 Q2 附近到達累計損益平衡</strong>，整年獲利 NT$17M。Phase 1 在 Y1 Q2 就能開始收 Plan 1 客戶，有助 Phase 2 投入期間的現金流。</li>
-    <li><strong>Y3 營運槓桿顯現</strong>，收入翻 2.5x、成本僅增加 45%，年利潤 <strong>NT$76M</strong>（利潤率約 61%）。</li>
-    <li>Y3 期末 ARR ¥812M（NT$173M）→ 若按 SaaS 4–6x 倍數估值，約 <strong>NT$690M–1,040M</strong>（¥32–49 億円）。</li>
+    <li><strong>Y1 虧損 NT$7.8M</strong>（¥37M），需預備至少 <strong>NT$10M 現金緩衝</strong>。Phase 1 在 Y1 Q2 即可收 Plan 1 客戶，cover Phase 2 投入。</li>
+    <li><strong>Y2 Q2 累計損益平衡</strong>，整年獲利 NT$17M。</li>
+    <li><strong>Y3 營運槓桿顯現</strong>：收入翻 2.5x、成本僅增 45%，年利潤 <strong>NT$76M（利潤率 61%）</strong>。</li>
+    <li>Y3 期末 ARR ¥812M → SaaS 4–6x 倍數估值約 <strong>¥32–49 億円</strong>。</li>
   </ul>
 </div>
 
 <!-- ==================== 7 單位經濟 ==================== -->
 <h2 id="unit"><span class="num">07</span>單位經濟與回本</h2>
-
-<div class="grid grid-3">
-  <div class="stat accent">
-    <div class="label">Plan 1 ACV</div>
-    <div class="value">¥1.25M</div>
-    <div class="sub">毛利率約 75%</div>
-  </div>
-  <div class="stat accent">
-    <div class="label">Plan 2 ACV</div>
-    <div class="value">¥3.4M</div>
-    <div class="sub">毛利率約 78%</div>
-  </div>
-  <div class="stat accent">
-    <div class="label">Plan 3 ACV</div>
-    <div class="value">¥10.8M</div>
-    <div class="sub">毛利率約 72%（含 Managed）</div>
-  </div>
-</div>
-
 <table>
-  <thead><tr><th>指標</th><th class="num">Plan 1</th><th class="num">Plan 2</th><th class="num">Plan 3</th><th>備註</th></tr></thead>
+  <thead><tr><th>指標</th><th class="num">Plan 1</th><th class="num">Plan 2</th><th class="num">Plan 3</th></tr></thead>
   <tbody>
-    <tr><td>估算 CAC</td><td class="num">¥250k</td><td class="num">¥800k</td><td class="num">¥2,500k</td><td>含 BD 成本 + 行銷分攤</td></tr>
-    <tr><td>毛利 / 年</td><td class="num">¥938k</td><td class="num">¥2,652k</td><td class="num">¥7,776k</td><td></td></tr>
-    <tr><td>CAC 回本（月）</td><td class="num">3.2 月</td><td class="num">3.6 月</td><td class="num">3.9 月</td><td>全部 &lt; 12 月，健康</td></tr>
-    <tr><td>預期 LTV（3 年）</td><td class="num">¥2.4M</td><td class="num">¥7.5M</td><td class="num">¥23.3M</td><td>含升級效應</td></tr>
-    <tr><td>LTV / CAC</td><td class="num">9.6x</td><td class="num">9.4x</td><td class="num">9.3x</td><td>SaaS 健康線 &gt;3x</td></tr>
+    <tr><td>ACV / 年</td><td class="num">¥1.25M</td><td class="num">¥3.4M</td><td class="num">¥10.8M</td></tr>
+    <tr><td>毛利率</td><td class="num">75%</td><td class="num">78%</td><td class="num">72%</td></tr>
+    <tr><td>估算 CAC</td><td class="num">¥250k</td><td class="num">¥800k</td><td class="num">¥2,500k</td></tr>
+    <tr><td>CAC 回本</td><td class="num">3.2 月</td><td class="num">3.6 月</td><td class="num">3.9 月</td></tr>
+    <tr><td>LTV（3 年）</td><td class="num">¥2.4M</td><td class="num">¥7.5M</td><td class="num">¥23.3M</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>LTV / CAC</strong></td><td class="num"><strong>9.6x</strong></td><td class="num"><strong>9.4x</strong></td><td class="num"><strong>9.3x</strong></td></tr>
   </tbody>
 </table>
+<p class="note">※ CAC 回本全部 &lt; 12 月、LTV/CAC &gt; 3x，SaaS 健康區間。</p>
 
 <!-- ==================== 8 風險 ==================== -->
-<h2 id="risk"><span class="num">08</span>風險與敏感度分析</h2>
-
+<h2 id="risk"><span class="num">08</span>風險與敏感度</h2>
 <table>
-  <thead><tr><th>情境</th><th>Y3 ARR</th><th>Y3 損益</th><th>觸發條件</th></tr></thead>
+  <thead><tr><th>情境</th><th class="num">Y3 ARR</th><th class="num">Y3 損益</th><th>觸發條件</th></tr></thead>
   <tbody>
-    <tr style="background:rgba(77,212,172,0.06);"><td><span class="pill p2">樂觀</span> 客戶數 +30%</td><td class="num">¥1,055M</td><td class="num" style="color:var(--accent-2);">+¥520M</td><td>代理商通路超預期、Plan 1→2 升級 45%</td></tr>
+    <tr style="background:rgba(77,212,172,0.06);"><td><span class="pill p2">樂觀</span> +30%</td><td class="num">¥1,055M</td><td class="num" style="color:var(--accent-2);">+¥520M</td><td>Plan 1→2 升級 45% + 代理商通路</td></tr>
     <tr><td>基準</td><td class="num">¥812M</td><td class="num" style="color:var(--accent-2);">+¥358M</td><td>本文預設</td></tr>
-    <tr style="background:rgba(255,184,77,0.06);"><td><span class="pill p3">保守</span> 客戶數 −30%</td><td class="num">¥568M</td><td class="num" style="color:var(--accent-2);">+¥180M</td><td>PoC 週期拉長、新客獲取 3 月平均</td></tr>
-    <tr style="background:rgba(255,107,107,0.06);"><td><span class="pill danger">悲觀</span> −50% + churn 翻倍</td><td class="num">¥380M</td><td class="num" style="color:var(--accent);">-¥30M</td><td>Buzz Finder 大幅降價 + 自寫爬蟲遭反爬封鎖</td></tr>
+    <tr style="background:rgba(255,184,77,0.06);"><td><span class="pill p3">保守</span> −30%</td><td class="num">¥568M</td><td class="num" style="color:var(--accent-2);">+¥180M</td><td>PoC 拉長</td></tr>
+    <tr style="background:rgba(255,107,107,0.06);"><td><span class="pill danger">悲觀</span> −50% + churn 翻倍</td><td class="num">¥380M</td><td class="num" style="color:var(--accent);">-¥30M</td><td>Buzz Finder 降價 + 爬蟲遭封鎖</td></tr>
   </tbody>
 </table>
 
 <div class="callout warn">
-  <div class="title">三個最敏感的變數（照影響力排序）</div>
-  <ol style="color:var(--text-dim);">
-    <li><strong>Plan 1 → Plan 2 升級率</strong>：每少 5%，Y3 ARR −¥60M。</li>
-    <li><strong>年流失率（Churn）</strong>：從 15% 升到 25%，Y3 ARR −¥140M。</li>
-    <li><strong>Plan 3 簽約速度</strong>：每少 5 家 Enterprise，Y3 ARR −¥54M。</li>
+  <div class="title">三個最敏感變數（照影響力）</div>
+  <ol style="color:var(--text-dim);margin-bottom:0;">
+    <li><strong>Plan 1→2 升級率</strong>：每少 5% → Y3 ARR −¥60M</li>
+    <li><strong>年流失 Churn</strong>：15% → 25% → Y3 ARR −¥140M</li>
+    <li><strong>Plan 3 簽約速度</strong>：每少 5 家 → Y3 ARR −¥54M</li>
   </ol>
-  → 投資重點對應：(1) Plan 2 Onboarding 流程化；(2) CS 團隊 + 日報自動化降流失；(3) 合作 BI/SI 夥伴加速 Plan 3。
-</div>
-
-<!-- ==================== 摘要 ==================== -->
-<h2><span class="num">⎔</span>一頁摘要</h2>
-<div class="card highlight">
-  <div class="grid grid-4">
-    <div><div class="label" style="color:var(--text-dim);font-size:12px;text-transform:uppercase;">市場錨</div><div style="font-size:20px;font-weight:600;">¥7.5B SAM</div></div>
-    <div><div class="label" style="color:var(--text-dim);font-size:12px;text-transform:uppercase;">潛在客戶</div><div style="font-size:20px;font-weight:600;">~15,000 家</div></div>
-    <div><div class="label" style="color:var(--text-dim);font-size:12px;text-transform:uppercase;">Y3 ARR 目標</div><div style="font-size:20px;font-weight:600;color:var(--accent-2);">¥812M</div></div>
-    <div><div class="label" style="color:var(--text-dim);font-size:12px;text-transform:uppercase;">回本時點</div><div style="font-size:20px;font-weight:600;color:var(--accent-2);">Y2 Q3</div></div>
-  </div>
-  <hr style="border:0;border-top:1px solid var(--border);margin:20px 0;">
-  <p style="margin:0;color:var(--text);">
-    <strong>定價核心：</strong>「基礎平台費 + 關鍵字詞組單價 + 帳號單價 + 選配模組」四件式結構 → 對日本採購見積文化天然友善、利於 Plan 1→2→3 自然升級。<br>
-    <strong>對標打法：</strong>Plan 1 同價貼身 Buzz Finder 進場，Plan 2 拿 VOC + AI 做差異戰，Plan 3 公開起價破 Quid/Meltwater 黑箱。<br>
-    <strong>資金計畫：</strong>準備 ¥60M 現金撐過 Y1，Y2 轉正，Y3 年利潤 ¥358M、累計 ARR 8 億円、預期估值 ¥32–49 億円。
-  </p>
 </div>
 
 </main>
 
 <footer>
-  Pandora Japan · Pricing &amp; Financial Model · 2026-04 · 本文件以 NTT 2023 調查、矢野經濟、日經 MJ 等公開資料為錨點推估，實際數值需以最新市場情報校準。
+  Pandora Japan · Pricing &amp; Financial Model · 2026-04 · 依 NTT 2023、矢野經濟、日經 MJ 等公開資料推估。
 </footer>
 
 </body>
