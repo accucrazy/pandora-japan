@@ -560,79 +560,82 @@
 </div>
 
 <h3>5.1 Y1 全渠道爬蟲鋪設計畫（一年內完成）</h3>
+<p>人力採「<strong>1 名 RD × 6 個月 × NT$10 萬/月 = NT$0.6M</strong>」集中開發、各渠道共用同一人力與框架。實際支出以 X API 授權費為最大宗。</p>
 <table>
   <thead>
-    <tr><th>渠道</th><th>取得方式</th><th>啟動時點</th><th class="num">Y1 投入（TWD）</th><th>備註</th></tr>
+    <tr><th>渠道</th><th>取得方式</th><th>啟動時點</th><th>主要挑戰</th></tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>X（Twitter）</strong></td>
       <td><span class="pill p1">API + 自寫爬蟲 雙軌</span></td>
       <td>Y1 Q1</td>
-      <td class="num">NT$4.0M</td>
-      <td>API Pro 年費 NT$2.5M + 自寫爬蟲 dev NT$1.5M</td>
+      <td>A 軌 API 費用 / B 軌反爬對抗；Y1 H2 決定主軌</td>
     </tr>
     <tr>
       <td>Threads</td>
       <td>自寫爬蟲（Meta 官方 API 功能有限）</td>
       <td>Y1 Q2</td>
-      <td class="num">NT$0.8M</td>
       <td>headless 爬蟲 + 反爬對抗</td>
     </tr>
     <tr>
       <td>Instagram（Business）</td>
       <td>Meta Graph API + 自寫爬蟲補公開內容</td>
       <td>Y1 Q2</td>
-      <td class="num">NT$0.8M</td>
-      <td>API 對 hashtag 有限制，需補公開貼文</td>
+      <td>API 對 hashtag 有限制、需補公開貼文</td>
     </tr>
     <tr>
       <td>新聞 / 網路媒體（80 站）</td>
       <td>RSS + 自寫爬蟲</td>
       <td>Y1 Q1</td>
-      <td class="num">NT$0.6M</td>
       <td>Scrapy + Playwright、日經 / Yahoo! 等</td>
     </tr>
     <tr>
       <td><strong>5ch / 掲示板</strong></td>
       <td>自寫爬蟲</td>
       <td>Y1 Q3</td>
-      <td class="num">NT$0.7M</td>
       <td>反爬強、需專人維運</td>
     </tr>
     <tr>
       <td>Review 站（@cosme / 価格.com / 食べログ）</td>
       <td>自寫爬蟲</td>
       <td>Y1 Q3–Q4</td>
-      <td class="num">NT$0.8M</td>
       <td>各站 TOS 需法務 review</td>
     </tr>
     <tr>
-      <td>YouTube / TikTok（延至 Y2 評估）</td>
+      <td>YouTube / TikTok（延至 Y2）</td>
       <td>官方 API + Partnership</td>
       <td>—</td>
-      <td class="num">—</td>
       <td>Y1 先觀察客戶訴求，不急</td>
     </tr>
-    <tr style="background:rgba(77,212,172,0.08);"><td colspan="3"><strong>Y1 渠道開發小計</strong></td><td class="num"><strong>NT$7.7M</strong></td><td>一次性開發 + Y1 當年維運</td></tr>
   </tbody>
 </table>
-<p class="note">※ Y1 一次鋪完全渠道，Y2、Y3 僅產生維運人力與 API / 雲端擴張成本，不再有新渠道一次性開發。</p>
+
+<table>
+  <thead><tr><th>5.1 成本項</th><th class="num">Y1 金額（TWD）</th><th>說明</th></tr></thead>
+  <tbody>
+    <tr><td>X API Pro 年費（A 軌）</td><td class="num">NT$2.5M</td><td>$5k USD/月 × 12，唯一外購授權大宗</td></tr>
+    <tr><td><strong>爬蟲開發人力</strong>（1 RD × 6 月 × NT$10 萬）</td><td class="num"><strong>NT$0.6M</strong></td><td>全渠道共用同一位 RD，一次鋪完框架</td></tr>
+    <tr><td>代理 IP / 反爬工具 / 法務諮詢</td><td class="num">NT$0.3M</td><td>跨渠道共用</td></tr>
+    <tr style="background:rgba(77,212,172,0.08);"><td><strong>Y1 渠道開發小計</strong></td><td class="num"><strong>NT$3.4M</strong></td><td>較先前估 NT$7.7M 精簡 56%</td></tr>
+  </tbody>
+</table>
+<p class="note">※ 1 名 RD 6 個月內完成全渠道 MVP 級爬蟲框架，共用 Scrapy / Playwright 基底；細部特化（5ch 反爬、Review 欄位解析）由 Y2 起的維運 FTE 接手。</p>
 
 <h3>5.2 Year 1 技術 / 爬蟲成本明細（TWD）</h3>
 <table>
   <thead><tr><th>項目</th><th>內容</th><th class="num">年成本（TWD）</th><th>備註</th></tr></thead>
   <tbody>
     <tr><td><strong>X API（A 軌）</strong></td><td>X API Pro tier 起步，視量再升 Enterprise 部分 firehose</td><td class="num">NT$2.5M</td><td>$5k USD/月 × 12 ≒ NT$2.5M</td></tr>
-    <tr><td><strong>X 自寫爬蟲（B 軌）</strong></td><td>自建爬蟲 dev、代理 IP、反爬工具、法務諮詢</td><td class="num">NT$1.5M</td><td>與 A 軌並行 6 個月對照評估</td></tr>
-    <tr><td>Threads / IG / 新聞 / 5ch / Review 一次鋪完</td><td>自寫爬蟲框架（Scrapy + Playwright）與各站特化</td><td class="num">NT$3.7M</td><td>Y1 渠道開發小計（詳見 5.1 表）</td></tr>
-    <tr><td>後端 / 資料工程師 × 3 FTE</td><td>管線、去重、排程、告警、維運</td><td class="num">NT$6.9M</td><td>NT$2.3M × 3 名（年薪 + SG&amp;A）</td></tr>
+    <tr><td><strong>爬蟲一次性開發人力</strong></td><td>1 名 RD × 6 個月 × NT$10 萬，全渠道（X 雙軌、Threads、IG、News、5ch、Review）共用</td><td class="num">NT$0.6M</td><td>一次性 MVP 框架，之後交給維運 FTE</td></tr>
+    <tr><td>代理 IP / 反爬工具 / 法務諮詢</td><td>跨渠道共用，TOS 與 APPI 合規審查</td><td class="num">NT$0.3M</td><td>含 B 軌自寫爬蟲的合規成本</td></tr>
+    <tr><td>後端 / 資料工程師 × 3 FTE</td><td>平台、管線、去重、排程、告警、維運</td><td class="num">NT$6.9M</td><td>NT$2.3M × 3 名（年薪 + SG&amp;A）</td></tr>
     <tr><td>AI / LLM API</td><td>摘要、問答、月報生成</td><td class="num">NT$1.2M</td><td>Y1 客戶量少、用量低</td></tr>
     <tr><td><strong>GCP（asia-northeast1 / 東京 Region）</strong></td><td>BigQuery、Cloud Storage、Pub/Sub、GKE；APPI 合規資料落地</td><td class="num">NT$0.8M</td><td>~NT$67k/月，隨資料量線性成長</td></tr>
-    <tr style="background: rgba(77,212,172,0.08);"><td colspan="2"><strong>Y1 技術 / 爬蟲小計</strong></td><td class="num"><strong>NT$14.5M</strong></td><td>占 Y1 總成本 <strong>64%</strong>（約 ¥68M）</td></tr>
+    <tr style="background: rgba(77,212,172,0.08);"><td colspan="2"><strong>Y1 技術 / 爬蟲小計</strong></td><td class="num"><strong>NT$12.3M</strong></td><td>占 Y1 總成本 <strong>60%</strong>，較先前 NT$14.5M 精簡 NT$2.2M</td></tr>
   </tbody>
 </table>
-<p class="note">※ 雲端全線使用 GCP asia-northeast1（東京）以符合 APPI 資料儲存地要求。</p>
+<p class="note">※ 雲端全線使用 GCP asia-northeast1（東京）以符合 APPI 資料儲存地要求。1 名 RD × 6 月的爬蟲開發獨立於 3 FTE 平台團隊之外，避免把一次性 dev 成本與持續維運成本混在一起。</p>
 
 <h3>5.3 其他成本（簡述）</h3>
 <ul class="clean">
@@ -645,8 +648,8 @@
 <h3>5.4 三年成本曲線（技術為主，TWD）</h3>
 <div class="stacked-chart">
   <div class="stacked-col">
-    <div class="total">NT$22.8M</div>
-    <div class="seg" style="height:145px; background:#4dd4ac;" title="Tech NT$14.5M"></div>
+    <div class="total">NT$20.6M</div>
+    <div class="seg" style="height:123px; background:#4dd4ac;" title="Tech NT$12.3M"></div>
     <div class="seg" style="height:51px; background:#6ba4ff;" title="Sales/CS NT$5.1M"></div>
     <div class="seg" style="height:32px; background:#ffb84d;" title="Mkt/合規 NT$3.2M"></div>
     <div class="label">Year 1</div>
@@ -676,17 +679,19 @@
   <thead><tr><th>成本項</th><th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th>主要成長動因</th></tr></thead>
   <tbody>
     <tr style="background: rgba(77,212,172,0.08);">
-      <td><strong>技術 / 爬蟲（核心）</strong></td><td class="num"><strong>NT$14.5M</strong></td><td class="num"><strong>NT$21.3M</strong></td><td class="num"><strong>NT$28.7M</strong></td>
+      <td><strong>技術 / 爬蟲（核心）</strong></td><td class="num"><strong>NT$12.3M</strong></td><td class="num"><strong>NT$21.3M</strong></td><td class="num"><strong>NT$28.7M</strong></td>
       <td>Y1 一次鋪完全渠道；Y2 維運 + YouTube/TikTok；Y3 海外語系</td>
     </tr>
-    <tr><td>　↳ X API（A 軌）+ 自寫爬蟲（B 軌）</td><td class="num">NT$4.0M</td><td class="num">NT$3.5M</td><td class="num">NT$5.0M</td><td>Y2 確定主軌後整併</td></tr>
-    <tr><td>　↳ 其他渠道爬蟲維運</td><td class="num">NT$3.7M</td><td class="num">NT$2.5M</td><td class="num">NT$3.5M</td><td>Y1 一次性開發、Y2 起僅維運</td></tr>
+    <tr><td>　↳ X API（外購授權）</td><td class="num">NT$2.5M</td><td class="num">NT$3.0M</td><td class="num">NT$4.0M</td><td>隨客戶資料量逐年微升</td></tr>
+    <tr><td>　↳ 爬蟲一次性 RD（1 × 6 月 × 10 萬）</td><td class="num">NT$0.6M</td><td class="num">—</td><td class="num">—</td><td>僅 Y1，之後由維運 FTE 接手</td></tr>
+    <tr><td>　↳ 代理 IP / 反爬工具 / 法務</td><td class="num">NT$0.3M</td><td class="num">NT$0.5M</td><td class="num">NT$0.7M</td><td>持續維運成本</td></tr>
+    <tr><td>　↳ 其他渠道爬蟲維運</td><td class="num">—</td><td class="num">NT$2.5M</td><td class="num">NT$3.0M</td><td>Y2 起的延伸維運</td></tr>
     <tr><td>　↳ 後端 / 資料工程師</td><td class="num">NT$6.9M</td><td class="num">NT$10.0M</td><td class="num">NT$13.0M</td><td>Y1 3 FTE → Y2 4 FTE → Y3 5 FTE</td></tr>
     <tr><td>　↳ AI / LLM API</td><td class="num">NT$1.2M</td><td class="num">NT$3.8M</td><td class="num">NT$5.5M</td><td>隨客戶數成長</td></tr>
     <tr><td>　↳ GCP（asia-northeast1）</td><td class="num">NT$0.8M</td><td class="num">NT$1.5M</td><td class="num">NT$2.5M</td><td>BigQuery / Pub/Sub / GKE 使用量</td></tr>
     <tr><td>銷售 / CS / 在地 PM</td><td class="num">NT$5.1M</td><td class="num">NT$7.7M</td><td class="num">NT$12.8M</td><td>—（簡述）</td></tr>
     <tr><td>行銷 + 合規 + 其他</td><td class="num">NT$3.2M</td><td class="num">NT$4.7M</td><td class="num">NT$7.5M</td><td>—（簡述）</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>合計</strong></td><td class="num"><strong>NT$22.8M</strong></td><td class="num"><strong>NT$33.6M</strong></td><td class="num"><strong>NT$48.9M</strong></td><td>對應日幣 ¥107M / ¥158M / ¥230M</td></tr>
+    <tr style="background:rgba(255,107,107,0.08);"><td><strong>合計</strong></td><td class="num"><strong>NT$20.6M</strong></td><td class="num"><strong>NT$33.6M</strong></td><td class="num"><strong>NT$48.9M</strong></td><td>對應日幣 ¥97M / ¥158M / ¥230M</td></tr>
   </tbody>
 </table>
 
@@ -729,7 +734,7 @@
 <h3>6.3 實際認列營收 vs 成本 vs 損益</h3>
 <div class="stacked-chart">
   <div class="stacked-col">
-    <div class="total" style="color:var(--accent);">-NT$9.8M</div>
+    <div class="total" style="color:var(--accent);">-NT$7.6M</div>
     <div class="seg" style="height:61px; background:#4dd4ac;" title="Revenue NT$13M"></div>
     <div class="label">Year 1</div>
   </div>
@@ -755,17 +760,17 @@
     <tr><td>期末 ARR（JPY）</td><td class="num">¥112M</td><td class="num">¥364M</td><td class="num">¥812M</td><td class="num">—</td></tr>
     <tr><td>當年度認列 Revenue（JPY）</td><td class="num">¥61M</td><td class="num">¥238M</td><td class="num">¥588M</td><td class="num">¥887M</td></tr>
     <tr><td>當年度認列 Revenue（TWD）</td><td class="num">NT$13.0M</td><td class="num">NT$50.6M</td><td class="num">NT$125.1M</td><td class="num">NT$188.7M</td></tr>
-    <tr><td>成本 OPEX（TWD）</td><td class="num">NT$22.8M</td><td class="num">NT$33.6M</td><td class="num">NT$48.9M</td><td class="num">NT$105.3M</td></tr>
-    <tr style="background:rgba(255,107,107,0.08);"><td><strong>年度損益（TWD）</strong></td><td class="num" style="color:var(--accent);"><strong>-NT$9.8M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$17.0M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$76.2M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$83.4M</strong></td></tr>
-    <tr><td>累計損益（TWD）</td><td class="num" style="color:var(--accent);">-NT$9.8M</td><td class="num">+NT$7.2M</td><td class="num" style="color:var(--accent-2);">+NT$83.4M</td><td class="num">—</td></tr>
+    <tr><td>成本 OPEX（TWD）</td><td class="num">NT$20.6M</td><td class="num">NT$33.6M</td><td class="num">NT$48.9M</td><td class="num">NT$103.1M</td></tr>
+    <tr style="background:rgba(255,107,107,0.08);"><td><strong>年度損益（TWD）</strong></td><td class="num" style="color:var(--accent);"><strong>-NT$7.6M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$17.0M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$76.2M</strong></td><td class="num" style="color:var(--accent-2);"><strong>+NT$85.6M</strong></td></tr>
+    <tr><td>累計損益（TWD）</td><td class="num" style="color:var(--accent);">-NT$7.6M</td><td class="num">+NT$9.4M</td><td class="num" style="color:var(--accent-2);">+NT$85.6M</td><td class="num">—</td></tr>
   </tbody>
 </table>
 
 <div class="callout">
   <div class="title">關鍵財務結論</div>
   <ul class="clean" style="margin-bottom:0;">
-    <li><strong>Y1 虧損約 NT$9.8M</strong>（¥46M，上市投入期），需預備至少 <strong>NT$10–15M 現金緩衝</strong>。</li>
-    <li><strong>Y2 Q3 附近到達累計損益平衡</strong>，整年小幅獲利 NT$17M。</li>
+    <li><strong>Y1 虧損約 NT$7.6M</strong>（¥36M，上市投入期，爬蟲採 RD 1×6 月精簡估算後），需預備至少 <strong>NT$10M 現金緩衝</strong>。</li>
+    <li><strong>Y2 Q2 附近到達累計損益平衡</strong>，整年獲利 NT$17M。</li>
     <li><strong>Y3 營運槓桿顯現</strong>，收入翻 2.5x、成本僅增加 45%，年利潤 <strong>NT$76M</strong>（利潤率約 61%）。</li>
     <li>Y3 期末 ARR ¥812M（NT$173M）→ 若按 SaaS 4–6x 倍數估值，約 <strong>NT$690M–1,040M</strong>（¥32–49 億円）。</li>
   </ul>
